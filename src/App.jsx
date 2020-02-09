@@ -1,10 +1,11 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Route } from 'react-router-dom';
-import Home from './Components/HomePage';
-import img from './Components/images/bg.png';
-import Navbar from './Components/Navbar';
-import AboutMe from './Components/AboutMe';
+import React from "react";
+import styled from "styled-components";
+import { Route } from "react-router-dom";
+import Home from "./Components/HomePage";
+import img from "./Components/images/bg.png";
+import Navbar from "./Components/Navbar";
+import AboutMe from "./Components/AboutMe";
+import Skills from "./Components/Skills";
 
 const StyledDiv = styled.div`
   height: 100vh;
@@ -20,6 +21,7 @@ function App() {
       <Navbar />
       <Route exact path="/" component={Home} />
       <Route path="/about" component={AboutMe} />
+      <Route path="/skills" component={Skills} />
     </StyledDiv>
   );
 }
