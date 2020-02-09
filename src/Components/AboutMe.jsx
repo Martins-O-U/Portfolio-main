@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import selfPix from './images/pic00.jpg';
+import React from "react";
+import styled from "styled-components";
+import selfPix from "./images/pic00.jpg";
 
 const StyledContainer = styled.div`
   @keyframes fadeInUp {
@@ -79,24 +79,24 @@ const AboutMe = () => {
         <StyledDiv>
           <StyledPara>
             <p>
-              I had my first real exposure to how Information Technology work
-              about a year and six months ago, it was a life defining moment for
-              me. At first, i explored Computer Networking and some aspect of
-              Network Security, within which period i also got introduced to Web
-              Development, there i knew i had found my path and began some self
-              study sessions. By August 2019 i quit all else (which included my
-              Maintenance job as a Mechanical Engineer) and joined Lambda School
-              as a Full Stack Web Development student.
+              I had my first real exposure to how Information Technology works
+              about a year and six months ago, and it was a life defining moment
+              for me. At first, I explored Computer Networking and some aspects
+              of Network Security, within which period I also got introduced to
+              Web Development. Here, I knew I had found my path and began some
+              self-study sessions. By August 2019, I quit all else (which
+              included my Maintenance Supervisor job as a Mechanical Engineer)
+              and joined Lambda School as a Full Stack Web Development student.
             </p>
             <p>
-              To this very day my love for coding never waned, thus while
-              learning everyday i developed great interpersonal skills as well
+              To this very day my love for coding has never waned, thus while
+              learning every day I developed great interpersonal skills as well
               as skills required of a Software Engineer, be it the Front-End or
-              Back-End/Database Management. My ultimate goal is to contribute
-              towards making life easier through the use of smart technology.
+              Back-End/Database Management. My goal is to contribute towards
+              making life easier using smart technology.
             </p>
             <p>
-              When i am not working on a project, i am either volunteering,
+              When I am not working on a project, I am either volunteering,
               spending time with family and friends or playing board games.
             </p>
           </StyledPara>

@@ -1,9 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from 'react';
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import Socials from './Socials';
-import selfPix from './images/pic00.jpg';
+import React from "react";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+import Socials from "./Socials";
+import selfPix from "./images/pic00.jpg";
 
 const HomeDiv = styled.div`
   @keyframes fadeInUp {
@@ -102,7 +102,7 @@ const AboutDiv = styled.h3`
     transition-duration: 0.3s;
   }
   .hvr-radial-out:before {
-    content: '';
+    content: "";
     position: absolute;
     z-index: -1;
     top: 0;
@@ -143,7 +143,7 @@ const Home = () => {
           </div>
           <div className="intro">
             <header>
-              <h1>Hello, I am Martins Onyedikachi</h1>
+              <h1>Hello, I am Martins Onyedikachi.</h1>
             </header>
             <p>A Software Engineer who is in love with technology</p>
             <div>
