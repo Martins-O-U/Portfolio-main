@@ -7,6 +7,7 @@ import Navbar from "./Components/Navbar";
 import AboutMe from "./Components/AboutMe";
 import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
+import SingleProjectInfo from "./Components/SingleProjectInfo";
 
 const StyledDiv = styled.div`
   height: 100vh;
@@ -23,6 +24,7 @@ function App() {
       <Route path="/about" component={AboutMe} />
       <Route path="/skills" component={Skills} />
       <Route path="/project" component={Projects} />
+      <Route path="/singleProject/:id" component={SingleProjectInfo} />
     </StyledDiv>
   );
 }

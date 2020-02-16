@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Card, CardImg, CardBody, CardTitle } from "reactstrap";
 import styled from "styled-components";
 import lambdaDoor from "./images/LambdaDoor.png";
@@ -24,7 +25,9 @@ function Projects() {
                 <CardTitle>
                   <strong>Refugee Stories</strong>
                 </CardTitle>
-                <span className="hvr-radial-out">About Project</span>
+                <Link to={`/singleProject/1`}>
+                  <span className="hvr-radial-out">About Project</span>
+                </Link>
               </div>
             </CardBody>
           </Card>
@@ -43,7 +46,9 @@ function Projects() {
                 <CardTitle>
                   <strong>Local-Park-Passport</strong>
                 </CardTitle>
-                <span className="hvr-radial-out">About Project</span>
+                <Link to={`/singleProject/2`}>
+                  <span className="hvr-radial-out">About Project</span>
+                </Link>
               </div>
             </CardBody>
           </Card>
@@ -62,7 +67,9 @@ function Projects() {
                 <CardTitle>
                   <strong>LambdaDoor</strong>
                 </CardTitle>
-                <span className="hvr-radial-out">About Project</span>
+                <Link to={`/singleProject/3`}>
+                  <span className="hvr-radial-out">About Project</span>
+                </Link>
               </div>
             </CardBody>
           </Card>
@@ -124,7 +131,7 @@ const StyledDiv = styled.div`
     cursor: pointer;
     border: 1px solid #2098d1;
     border-radius: 10px;
-    margin-bottom: 3px;
+    margin-bottom: 1px;
   }
 
   .hvr-radial-out {
