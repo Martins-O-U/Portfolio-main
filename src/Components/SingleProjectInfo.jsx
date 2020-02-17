@@ -35,19 +35,19 @@ function SingleProject(props) {
 
   return (
     <StyledDiv>
-      <div>
+      <div className="projectCard">
         {calledProject.map(information => (
           <div key={information.id}>
-            <p>{information.image}</p>
-            <p>{information.image2}</p>
-            <h2>{information.name}</h2>
+            <h2 className="intro">{information.name}</h2>
+            <hr />
             <p>{information.about}</p>
-            <p>{information.workedOn}</p>
+            <p className="project-para">{information.workedOn}</p>
           </div>
         ))}
         {techStacks.map(stack => (
           <div key={stack.id}>
             <p>
+              Tech stacks used includes:
               <span>{stack.tech1}</span>
               <span>{stack.tech2}</span>
               <span>{stack.tech3}</span>
@@ -103,6 +103,12 @@ const StyledDiv = styled.div`
     align-items: center;
     justify-content: space-evenly;
   }
+  .projectCard {
+    max-width: 750px;
+    padding-top: 10px;
+    margin: 13% auto;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
   .backbutton {
     display: flex;
     float: right;
@@ -112,6 +118,16 @@ const StyledDiv = styled.div`
     border-radius: 10px;
     border: 1px solid #2098d1;
     margin-right: 20px;
+  }
+  .project-para {
+    margin-top: 30px;
+    font-size: 15px;
+  }
+  .intro {
+    text-shadow: 1px 1px 1px lightblue, 3px 3px 2px darkgray;
+  }
+  p {
+    padding: 2px;
   }
   .hvr-radial-out {
     display: inline-block;
