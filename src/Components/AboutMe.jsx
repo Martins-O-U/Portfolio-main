@@ -1,6 +1,47 @@
 import React from "react";
 import styled from "styled-components";
 import selfPix from "./images/pic00.jpg";
+import Footer from "./FooterNav";
+
+const AboutMe = () => {
+  return (
+    <StyledContainer>
+      <div className="animated animatedFadeInUp fadeInUp">
+        <h1>About Me</h1>
+        <StyledDiv>
+          <StyledPara>
+            <p>
+              I had my first real exposure to how Information Technology works
+              about a year and six months ago, and it was a life defining moment
+              for me. At first, I explored Computer Networking and some aspects
+              of Network Security, within which period I also got introduced to
+              Web Development. Here, I knew I had found my path and began some
+              self-study sessions. By August 2019, I quit all else (which
+              included my Maintenance Supervisor job as a Mechanical Engineer)
+              and joined Lambda School as a Full Stack Web Development student.
+            </p>
+            <p>
+              To this very day my love for coding has never waned, thus while
+              learning every day I developed great interpersonal skills as well
+              as skills required of a Software Engineer, be it the Front-End or
+              Back-End/Database Management. My goal is to contribute towards
+              making life easier using smart technology.
+            </p>
+            <p>
+              When I am not working on a project, I am either volunteering,
+              spending time with family and friends or playing board games.
+            </p>
+          </StyledPara>
+          <AboutPix>
+            <img src={selfPix} alt="My Profile Pix" id="self-img" />
+          </AboutPix>
+        </StyledDiv>
+      </div>
+      <Footer />
+    </StyledContainer>
+  );
+};
+export default AboutMe;
 
 const StyledContainer = styled.div`
   @keyframes fadeInUp {
@@ -42,10 +83,13 @@ const StyledContainer = styled.div`
     -webkit-animation-name: fadeInUp;
   }
 
-  h3 {
-    margin-top: 7%;
-    margin-left: 2%;
+  h1 {
+    margin-top: 4.5%;
+    margin-left: 10px;
     font-size: 25px;
+    text-align: left;
+    margin-bottom: 3px;
+    text-shadow: 1px 1px 1px #a9a9a9, 3px 3px 2px darkgray;
   }
 `;
 const StyledDiv = styled.div`
@@ -70,42 +114,3 @@ const AboutPix = styled.p`
     width: 280px;
   }
 `;
-
-const AboutMe = () => {
-  return (
-    <StyledContainer>
-      <div className="animated animatedFadeInUp fadeInUp">
-        <h3>About Me</h3>
-        <StyledDiv>
-          <StyledPara>
-            <p>
-              I had my first real exposure to how Information Technology works
-              about a year and six months ago, and it was a life defining moment
-              for me. At first, I explored Computer Networking and some aspects
-              of Network Security, within which period I also got introduced to
-              Web Development. Here, I knew I had found my path and began some
-              self-study sessions. By August 2019, I quit all else (which
-              included my Maintenance Supervisor job as a Mechanical Engineer)
-              and joined Lambda School as a Full Stack Web Development student.
-            </p>
-            <p>
-              To this very day my love for coding has never waned, thus while
-              learning every day I developed great interpersonal skills as well
-              as skills required of a Software Engineer, be it the Front-End or
-              Back-End/Database Management. My goal is to contribute towards
-              making life easier using smart technology.
-            </p>
-            <p>
-              When I am not working on a project, I am either volunteering,
-              spending time with family and friends or playing board games.
-            </p>
-          </StyledPara>
-          <AboutPix>
-            <img src={selfPix} alt="My Profile Pix" id="self-img" />
-          </AboutPix>
-        </StyledDiv>
-      </div>
-    </StyledContainer>
-  );
-};
-export default AboutMe;

@@ -1,6 +1,22 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import styled from 'styled-components';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import styled from "styled-components";
+
+const Navbar = () => {
+  return (
+    <Headers>
+      <nav>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/about">About</NavLink>
+        <NavLink to="/skills">Skills</NavLink>
+        <NavLink to="/project">Project</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
+      </nav>
+    </Headers>
+  );
+};
+
+export default Navbar;
 
 const Headers = styled.header`
   nav {
@@ -39,7 +55,7 @@ const Headers = styled.header`
   }
 
   nav a.active:before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     bottom: -0.6em;
@@ -50,19 +66,3 @@ const Headers = styled.header`
     border-top: solid 0.6em #282828;
   }
 `;
-
-const Navbar = () => {
-  return (
-    <Headers>
-      <nav>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/about">About</NavLink>
-        <NavLink to="/skills">Skills</NavLink>
-        <NavLink to="/project">Project</NavLink>
-        <NavLink to="/contact">Contact</NavLink>
-      </nav>
-    </Headers>
-  );
-};
-
-export default Navbar;

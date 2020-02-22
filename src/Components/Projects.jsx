@@ -5,11 +5,12 @@ import styled from "styled-components";
 import lambdaDoor from "./images/LambdaDoor.png";
 import localPark from "./images/Local-Park.png";
 import refugeeStories from "./images/Refugee-stories.png";
+import Footer from "./FooterNav";
 
 function Projects() {
   return (
     <StyledDiv>
-      <h3 className="animated animatedFadeInUp fadeInUp">Projects</h3>
+      <h1 className="animated animatedFadeInUp fadeInUp">PROJECTS</h1>
       <div className="grid-view animated animatedFadeInUp fadeInUp">
         <div className="card">
           <Card>
@@ -75,6 +76,7 @@ function Projects() {
           </Card>
         </div>
       </div>
+      <Footer />
     </StyledDiv>
   );
 }
@@ -120,10 +122,12 @@ const StyledDiv = styled.div`
     animation-name: fadeInUp;
     -webkit-animation-name: fadeInUp;
   }
-  h3 {
-    margin-top: 7%;
-    margin-left: 2%;
+  h1 {
+    margin-top: 4.2%;
     font-size: 25px;
+    text-align: center;
+    margin-bottom: 3px;
+    text-shadow: 1px 1px 1px #a9a9a9, 3px 3px 2px darkgray;
   }
 
   span {
@@ -131,7 +135,8 @@ const StyledDiv = styled.div`
     cursor: pointer;
     border: 1px solid #2098d1;
     border-radius: 10px;
-    margin-bottom: 1px;
+    margin-bottom: 5px;
+    color: #2098d1;
   }
 
   .hvr-radial-out {

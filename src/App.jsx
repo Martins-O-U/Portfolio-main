@@ -11,6 +11,7 @@ import SingleProjectInfo from "./Components/SingleProjectInfo";
 
 const StyledDiv = styled.div`
   height: 100vh;
+  overflow: hidden;
   background-image: url(${img});
   background-color: #fafafa;
   margin: 0 20px;

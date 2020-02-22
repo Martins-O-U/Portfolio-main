@@ -5,6 +5,36 @@ import { Link } from "react-router-dom";
 import Socials from "./Socials";
 import selfPix from "./images/pic00.jpg";
 
+const Home = () => {
+  return (
+    <HomeDiv>
+      <div className="animated animatedFadeInUp fadeInUp">
+        <HomeDisplay>
+          <div className="self">
+            <img src={selfPix} alt="My Profile Pix" id="self-img" />
+          </div>
+          <div className="intro">
+            <header>
+              <h1>Hello, I am Martins Onyedikachi.</h1>
+            </header>
+            <p>A Software Engineer who is in love with technology</p>
+            <div>
+              <AboutDiv>
+                <Link to="/about">
+                  <span className="hvr-radial-out">About Me</span>
+                </Link>
+              </AboutDiv>
+            </div>
+            <Socials />
+          </div>
+        </HomeDisplay>
+      </div>
+    </HomeDiv>
+  );
+};
+
+export default Home;
+
 const HomeDiv = styled.div`
   @keyframes fadeInUp {
     from {
@@ -132,33 +162,3 @@ const AboutDiv = styled.h3`
     transform: scale(2);
   }
 `;
-
-const Home = () => {
-  return (
-    <HomeDiv>
-      <div className="animated animatedFadeInUp fadeInUp">
-        <HomeDisplay>
-          <div className="self">
-            <img src={selfPix} alt="My Profile Pix" id="self-img" />
-          </div>
-          <div className="intro">
-            <header>
-              <h1>Hello, I am Martins Onyedikachi.</h1>
-            </header>
-            <p>A Software Engineer who is in love with technology</p>
-            <div>
-              <AboutDiv>
-                <Link to="/about">
-                  <span className="hvr-radial-out">About Me</span>
-                </Link>
-              </AboutDiv>
-            </div>
-            <Socials />
-          </div>
-        </HomeDisplay>
-      </div>
-    </HomeDiv>
-  );
-};
-
-export default Home;

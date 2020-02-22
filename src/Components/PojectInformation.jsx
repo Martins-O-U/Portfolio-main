@@ -52,11 +52,11 @@ export const TechStack = [
     id: 3,
     tech1: "React",
     tech2: "Node JS",
-    tech3: "Node Mailer",
+    tech3: "Redux",
     tech4: "Express",
     tech5: "Rechart",
     tech6: "PostgreSQL",
-    tech7: "Redux",
+    tech7: "Node Mailer",
     tech8: "Styled-Component",
     tech9: "Google API",
     tech10: "Cloudinary"
