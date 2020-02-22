@@ -6,15 +6,6 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { PojectInfo, TechStack } from "./PojectInformation";
 import styled from "styled-components";
 
-export const HomeScreenCases = props => {
-  console.log(PojectInfo);
-  return (
-    <div className="container">
-      <p>Tested</p>
-    </div>
-  );
-};
-
 function SingleProject(props) {
   const proppId = props.match.params.id;
   let calledProject = [];
@@ -35,7 +26,7 @@ function SingleProject(props) {
 
   return (
     <StyledDiv>
-      <div className="projectCard">
+      <div className="projectCard animated animatedFadeInUp fadeInUp">
         {calledProject.map(information => (
           <div key={information.id}>
             <h2 className="intro">{information.name}</h2>
@@ -62,22 +53,36 @@ function SingleProject(props) {
           </div>
         ))}
         {calledProject.map(information2 => (
-          <div className="gitweb" key={information2.id}>
-            <p>
-              <a href={information2.gitHubRepo}>
-                <FontAwesomeIcon icon={faGithub} size="2x" />
-              </a>
-            </p>
-            <p>
-              <a href={information2.deployedAt}>
-                <FontAwesomeIcon icon={faGlobe} size="2x" />
-              </a>
-            </p>
+          <div className="gitwebBtn" key={information2.id}>
+            <div className="gitweb">
+              <p>
+                <a
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href={information2.gitHubRepo}
+                >
+                  <FontAwesomeIcon icon={faGithub} size="2x" target="_blank" />
+                </a>
+              </p>
+              <p>
+                <a
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href={information2.deployedAt}
+                >
+                  <FontAwesomeIcon icon={faGlobe} size="2x" />
+                </a>
+              </p>
+            </div>
+            <div>
+              <p onClick={props.history.goBack}>
+                <span className="backbutton hvr-radial-out">
+                  Back to projects
+                </span>
+              </p>
+            </div>
           </div>
         ))}
-        <p onClick={props.history.goBack}>
-          <span className="backbutton hvr-radial-out">Back to projects</span>
-        </p>
       </div>
     </StyledDiv>
   );
@@ -88,6 +93,45 @@ export default withRouter(SingleProject);
 const StyledDiv = styled.div`
   margin-top: 10%;
   text-align: center;
+
+  @keyframes fadeInUp {
+    from {
+      transform: translate3d(0, 40px, 0);
+    }
+
+    to {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes fadeInUp {
+    from {
+      transform: translate3d(0, 40px, 0);
+    }
+
+    to {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+
+  .animated {
+    animation-duration: 0.9s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 0.9s;
+    -webkit-animation-fill-mode: both;
+  }
+
+  .animatedFadeInUp {
+    opacity: 0;
+  }
+
+  .fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+  }
   span {
     margin: 3px 5px;
     color: #4630ff;
@@ -96,18 +140,35 @@ const StyledDiv = styled.div`
     border-radius: 5px;
     padding: 3px 4px;
   }
+  .gitwebBtn {
+    width: 450px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
   .gitweb {
     width: 200px;
     margin: auto;
     display: flex;
-    align-items: center;
+    text-align: right;
     justify-content: space-evenly;
+    a {
+      color: #2098d1;
+      transition: transform 250ms;
+      display: inline-block;
+    }
+    a:hover {
+      transform: translateY(-3px);
+    }
   }
   .projectCard {
     max-width: 750px;
     padding-top: 10px;
     margin: 13% auto;
-    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 10px 15px 0 rgba(0, 0, 0, 0.4);
+    background-color: #f5f5f5;
   }
   .backbutton {
     display: flex;
@@ -127,7 +188,7 @@ const StyledDiv = styled.div`
     text-shadow: 1px 1px 1px lightblue, 3px 3px 2px darkgray;
   }
   p {
-    padding: 2px;
+    padding: 3px;
   }
   .hvr-radial-out {
     display: inline-block;
