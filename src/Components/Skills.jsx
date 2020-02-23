@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import {} from "@fortawesome/react-fontawesome";
-import {} from "@fortawesome/free-solid-svg-icons";
+import { } from "@fortawesome/react-fontawesome";
+import { } from "@fortawesome/free-solid-svg-icons";
 import Footer from "./FooterNav";
 
 const Skills = () => {
@@ -23,7 +23,7 @@ const Skills = () => {
             <span> Eslint and Prettier</span>) etc.
           </p>
           <p>
-            I have come to development various technical skills such as
+            I have come to develop various technical skills such as
             programing with multiple languages and different frame works,
             debugging, project management, user research, database management,
             testing, deployment and much more.
