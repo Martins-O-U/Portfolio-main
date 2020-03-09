@@ -5,6 +5,7 @@ import styled from "styled-components";
 import lambdaDoor from "./images/LambdaDoor.png";
 import localPark from "./images/Local-Park.png";
 import refugeeStories from "./images/Refugee-stories.png";
+import reunite from "./images/Reunite.png";
 import Footer from "./FooterNav";
 
 function Projects() {
@@ -69,6 +70,27 @@ function Projects() {
                   <strong>LambdaDoor</strong>
                 </CardTitle>
                 <Link to={`/singleProject/3`}>
+                  <span className="hvr-radial-out">About Project</span>
+                </Link>
+              </div>
+            </CardBody>
+          </Card>
+        </div>
+        <div className="card">
+          <Card>
+            <CardImg
+              className="cardImg"
+              top
+              width="100%"
+              src={reunite}
+              alt="Card image cap"
+            />
+            <CardBody>
+              <div className="card-content">
+                <CardTitle>
+                  <strong>Reunite</strong>
+                </CardTitle>
+                <Link to={`/singleProject/4`}>
                   <span className="hvr-radial-out">About Project</span>
                 </Link>
               </div>
