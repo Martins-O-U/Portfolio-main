@@ -106,6 +106,7 @@ function Projects() {
 export default Projects;
 
 const StyledDiv = styled.div`
+  margin-bottom: 25%;
   @keyframes fadeInUp {
     from {
       transform: translate3d(0, 40px, 0);

@@ -7,7 +7,7 @@ import Footer from "./FooterNav";
 const Skills = () => {
   return (
     <Container>
-      <h1 className="animated animatedFadeInUp fadeInUp">What I do and Use</h1>
+      <h1 className="animated animatedFadeInUp fadeInUp">Why hire me?</h1>
       <StyledDiv>
         <div className="introDiv animated animatedFadeInUp fadeInUp">
           <h3>Full Stack Developer</h3>
@@ -82,6 +82,7 @@ const Skills = () => {
 export default Skills;
 
 const Container = styled.div`
+  margin-bottom: 25%;
   @keyframes fadeInUp {
     from {
       transform: translate3d(0, 40px, 0);

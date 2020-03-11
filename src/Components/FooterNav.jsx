@@ -1,55 +1,111 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faTwitter,
+  faGithub,
+  faLinkedin
+} from "@fortawesome/free-brands-svg-icons";
 import styled from "styled-components";
-import Socials from "./Socials";
 
 export default function Footer() {
   return (
     <StyledDiv>
-      <div className="ContHome">
-        <p>
-          <Link to="/">Home</Link>
-        </p>
-        <p>
-          <Link to="/contact">Contact</Link>
-        </p>
-      </div>
       <div className="copy-right">
         <p>&copy; 2020 Martins O-U</p>
       </div>
       <div className="social-handle">
-        <Socials />
+        <SocialsFoot />
       </div>
     </StyledDiv>
   );
 }
 
+export function SocialsFoot() {
+  return (
+    <StyledDivsoc>
+      <div className="social-handle">
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://twitter.com/Willyblinx_"
+          className="twitter"
+        >
+          <FontAwesomeIcon icon={faTwitter} size="2x" />
+        </a>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://github.com/Martins-O-U/"
+          className="github"
+        >
+          <FontAwesomeIcon icon={faGithub} size="2x" />
+        </a>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://www.linkedin.com/in/martins-o-u/"
+          className="linkdIn"
+        >
+          <FontAwesomeIcon icon={faLinkedin} size="2x" />
+        </a>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="mailto:martinsonyedikachi@gmail.com"
+          className="mail"
+        >
+          <FontAwesomeIcon icon={faEnvelope} size="2x" />
+        </a>
+      </div>
+    </StyledDivsoc>
+  );
+}
+
+const StyledDivsoc = styled.div`
+  a {
+    margin: 0 1rem;
+    transition: transform 250ms;
+    display: inline-block;
+    color: #2098d1;
+  }
+
+  a:hover {
+    transform: translateY(-3px);
+  }
+
+  @media only screen and (max-width: 500px){
+    a{
+      font-size: 13px;
+      margin:0 0.7rem;
+    }
+  }
+
+  @media only screen and (max-width: 370px){
+    a{
+      margin: 0 0.4rem;
+    }
+  }
+`;
+
+
 const StyledDiv = styled.div`
   display: flex;
-  padding: 3px 5px;
+  padding: 3px 3px;
   justify-content: space-evenly;
-  margin: auto;
-  margin-top: 5px;
+  margin-top: 10px;
+  margin-left: -20px;
   position: fixed;
   bottom: 0;
   width: 100%;
-  align-items: baseline;
-
-  .ContHome {
-    display: flex;
-    justify-content: space-evenly;
-    a {
-      margin-right: 12px;
-      margin-left: 12px;
-      text-decoration: none;
-      color: black;
-      transition: transform 250ms;
-      display: inline-block;
-      font-size: 17px;
-    }
-    a:hover {
-      color: #2098d1;
-      transform: translateY(-3px);
+  align-items: center;
+  background-color: #E6E6FA;
+   
+  @media only screen and (max-width:500px){
+    p{
+      font-size: 14px;
+      margin-top: 3px;
+      margin-botton: 2px;
     }
   }
 `;

@@ -59,7 +59,7 @@ a:hover {
   }
 
 .nav {
-    width: 20vw;
+    width: 25vw;
     border-width: 1px 1px 1px 0;
     border-style: solid;
     border-color: #888;
@@ -67,7 +67,7 @@ a:hover {
     top: 0;
     z-index: 999;
     background-color: #fff;
-    left: -22vw;
+    left: -27vw;
     -webkit-transition: left 0.3s ease-in;
     -o-transition: left 0.3s ease-in;
     transition: left 0.3s ease-in;
