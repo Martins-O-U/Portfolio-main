@@ -78,7 +78,6 @@ const HomeDiv = styled.div`
 
 const HomeDisplay = styled.div`
   display: flex;
-  flex-direction: row;
   margin: 5% auto;
   text-align: center;
   max-width: calc(100%-50px);
@@ -93,6 +92,16 @@ const HomeDisplay = styled.div`
       border-radius: 50%;
       width: 260px;
     }
+    @media only screen and (max-width: 750px){
+      img{
+        width: 220px;
+      }
+    }
+    @media only screen and (max-width: 500px){
+      img{
+        width: 190px;
+      }
+    }
   }
 
   .intro {
@@ -101,6 +110,19 @@ const HomeDisplay = styled.div`
   }
   p {
     margin-bottom: 30px;
+  }
+
+  @media only screen and (max-width: 600px){
+    margin-top: 10%;
+    flex-direction: column;
+    
+  .intro {
+    width: 95%;
+  }
+
+  .self {
+    width: 95%;
+  }
   }
 `;
 

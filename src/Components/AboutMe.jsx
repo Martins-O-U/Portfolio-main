@@ -116,9 +116,9 @@ const StyledContainer = styled.div`
     }
   } 
 
-  @media only screen and (max-width: 370px){
+  @media only screen and (max-width: 490px){
     h1{
-      margin-top: 18%;
+      margin-top: 8%;
     }
 `;
 const StyledDiv = styled.div`
