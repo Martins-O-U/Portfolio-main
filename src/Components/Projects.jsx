@@ -145,7 +145,7 @@ const StyledDiv = styled.div`
     -webkit-animation-name: fadeInUp;
   }
   h1 {
-    margin-top: 4.2%;
+    margin-top: 4.5%;
     font-size: 25px;
     text-align: center;
     margin-bottom: 3px;
@@ -205,4 +205,33 @@ const StyledDiv = styled.div`
     -webkit-transform: scale(2);
     transform: scale(2);
   }
+
+  @media only screen and (max-width: 1105px){
+    h1{
+      margin-top: 6.5%;
+    }
+  } 
+
+  @media only screen and (max-width: 762px){
+    h1{
+      margin-top: 8%;
+    }
+  } 
+
+  @media only screen and (max-width: 650px){
+    h1{
+      margin-top: 10%;
+    }
+  } 
+
+  @media only screen and (max-width: 533px){
+    h1{
+      margin-top: 15%;
+    }
+  } 
+
+  @media only screen and (max-width: 370px){
+    h1{
+      margin-top: 18%;
+    }
 `;

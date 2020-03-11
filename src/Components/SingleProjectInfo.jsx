@@ -37,7 +37,7 @@ function SingleProject(props) {
         ))}
         {techStacks.map(stack => (
           <div key={stack.id}>
-            <p>
+            <p className="stack-par">
               Tech stacks used includes:
               <span>{stack.tech1}</span>
               <span>{stack.tech2}</span>
@@ -132,6 +132,12 @@ const StyledDiv = styled.div`
     animation-name: fadeInUp;
     -webkit-animation-name: fadeInUp;
   }
+  .stack-par{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+
+  }
   span {
     margin: 3px 5px;
     color: #4630ff;
@@ -165,7 +171,8 @@ const StyledDiv = styled.div`
   }
   .projectCard {
     max-width: 750px;
-    padding-top: 10px;
+    width: 95%;
+    padding: 10px 5px;
     margin: 13% auto;
     box-shadow: 0px 10px 15px 0 rgba(0, 0, 0, 0.4);
     background-color: #f5f5f5;
@@ -233,5 +240,17 @@ const StyledDiv = styled.div`
   .hvr-radial-out:active:before {
     -webkit-transform: scale(2);
     transform: scale(2);
+  }
+
+  @media only screen and (max-width: 500px){
+    .gitwebBtn{
+      display: flex;
+      flex-direction: column;
+      width: 95%;
+    }
+
+    .gitweb {
+      text-align: center;
+    }
   }
 `;
