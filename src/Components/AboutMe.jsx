@@ -9,7 +9,7 @@ const AboutMe = () => {
       <div className="animated animatedFadeInUp fadeInUp">
         <h1>About Me</h1>
         <StyledDiv>
-          <StyledPara>
+          <div className="styled-para">
             <p>
               I had my first real exposure to how Information Technology works
               about a year and six months ago, and it was a life defining moment
@@ -31,7 +31,7 @@ const AboutMe = () => {
               When I am not working on a project, I am either volunteering,
               spending time with family and friends or playing board games.
             </p>
-          </StyledPara>
+          </div>
           <AboutPix>
             <img src={selfPix} alt="My Profile Pix" id="self-img" />
           </AboutPix>
@@ -44,6 +44,7 @@ const AboutMe = () => {
 export default AboutMe;
 
 const StyledContainer = styled.div`
+  margin-bottom: 25%;
   @keyframes fadeInUp {
     from {
       transform: translate3d(0, 40px, 0);
@@ -84,24 +85,63 @@ const StyledContainer = styled.div`
   }
 
   h1 {
-    margin-top: 4.5%;
+    margin-top: 5%;
     margin-left: 10px;
     font-size: 25px;
     text-align: left;
     margin-bottom: 3px;
     text-shadow: 1px 1px 1px #a9a9a9, 3px 3px 2px darkgray;
   }
+
+  @media only screen and (max-width: 1105px){
+    h1{
+      margin-top: 6.5%;
+    }
+  } 
+
+  @media only screen and (max-width: 762px){
+    h1{
+      margin-top: 8%;
+    }
+  } 
+
+  @media only screen and (max-width: 650px){
+    h1{
+      margin-top: 10%;
+    }
+  } 
+
+  @media only screen and (max-width: 533px){
+    h1{
+      margin-top: 15%;
+    }
+  } 
+
+  @media only screen and (max-width: 490px){
+    h1{
+      margin-top: 8%;
+    }
 `;
 const StyledDiv = styled.div`
-  margin: 3% 2%;
+  margin: 3% 1%;
   display: flex;
   justify-content: space-between;
-`;
 
-const StyledPara = styled.div`
-  width: 55%;
-  margin: 5px 10px 5px 5px;
-  padding: 3px;
+  .styled-para{
+    width: 55%;
+    padding: 3px 10px;
+    border: #D3D3D3 0.5px solid;
+    border-radius: 10px;
+  }
+
+  @media only screen and (max-width: 700px){
+    flex-direction: column-reverse;
+
+    .styled-para{
+      width: 92.5%;
+      margin-top: 20px;
+    }
+  }
 `;
 
 const AboutPix = styled.p`
@@ -112,5 +152,17 @@ const AboutPix = styled.p`
   img {
     border-radius: 20px;
     width: 280px;
+  }
+
+  @media only screen and (max-width: 700px){
+    width: 95%;
+    margin: 5px;
+    text-align: right;
+  }
+
+  @media only screen and (max-width: 700px){
+    img {
+      width: 220px;
+    }
   }
 `;

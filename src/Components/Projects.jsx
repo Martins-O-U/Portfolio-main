@@ -5,6 +5,7 @@ import styled from "styled-components";
 import lambdaDoor from "./images/LambdaDoor.png";
 import localPark from "./images/Local-Park.png";
 import refugeeStories from "./images/Refugee-stories.png";
+import reunite from "./images/Reunite.png";
 import Footer from "./FooterNav";
 
 function Projects() {
@@ -75,6 +76,27 @@ function Projects() {
             </CardBody>
           </Card>
         </div>
+        <div className="card">
+          <Card>
+            <CardImg
+              className="cardImg"
+              top
+              width="100%"
+              src={reunite}
+              alt="Card image cap"
+            />
+            <CardBody>
+              <div className="card-content">
+                <CardTitle>
+                  <strong>Reunite</strong>
+                </CardTitle>
+                <Link to={`/singleProject/4`}>
+                  <span className="hvr-radial-out">About Project</span>
+                </Link>
+              </div>
+            </CardBody>
+          </Card>
+        </div>
       </div>
       <Footer />
     </StyledDiv>
@@ -84,6 +106,7 @@ function Projects() {
 export default Projects;
 
 const StyledDiv = styled.div`
+  margin-bottom: 25%;
   @keyframes fadeInUp {
     from {
       transform: translate3d(0, 40px, 0);
@@ -123,7 +146,7 @@ const StyledDiv = styled.div`
     -webkit-animation-name: fadeInUp;
   }
   h1 {
-    margin-top: 4.2%;
+    margin-top: 4.5%;
     font-size: 25px;
     text-align: center;
     margin-bottom: 3px;
@@ -183,4 +206,33 @@ const StyledDiv = styled.div`
     -webkit-transform: scale(2);
     transform: scale(2);
   }
+
+  @media only screen and (max-width: 1105px){
+    h1{
+      margin-top: 6.5%;
+    }
+  } 
+
+  @media only screen and (max-width: 762px){
+    h1{
+      margin-top: 8%;
+    }
+  } 
+
+  @media only screen and (max-width: 650px){
+    h1{
+      margin-top: 10%;
+    }
+  } 
+
+  @media only screen and (max-width: 533px){
+    h1{
+      margin-top: 15%;
+    }
+  } 
+  
+  @media only screen and (max-width: 490px){
+    h1{
+      margin-top: 8%;
+    }
 `;

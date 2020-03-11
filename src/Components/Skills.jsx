@@ -7,27 +7,29 @@ import Footer from "./FooterNav";
 const Skills = () => {
   return (
     <Container>
-      <h1 className="animated animatedFadeInUp fadeInUp">What I do and Use</h1>
+      <h1 className="animated animatedFadeInUp fadeInUp">Why hire me?</h1>
       <StyledDiv>
         <div className="introDiv animated animatedFadeInUp fadeInUp">
           <h3>Full Stack Developer</h3>
-          <p>
-            As a Full-Stack Web Application developer with a passion for web
-            technologies, I strive to follow best practices and use
-            industry-standard tools and methods which includes git-flow, Test
-            Driven Development (using
+          <div className='body-par'>
+            <p>
+              As a Full-Stack Web Application developer with a passion for web
+              technologies, I strive to follow best practices and use
+              industry-standard tools and methods which includes git-flow, Test
+              Driven Development (using
             <span> Jest, React Testing Library and suppertest</span>), Continous
             Integration (using
             <span> Travis CI and Coveralls</span>
             ), linting (using
             <span> Eslint and Prettier</span>) etc.
           </p>
-          <p>
-            I have come to develop various technical skills such as
-            programing with multiple languages and different frame works,
-            debugging, project management, user research, database management,
-            testing, deployment and much more.
+            <p>
+              I have come to develop various technical skills such as
+              programing with multiple languages and different frame works,
+              debugging, project management, user research, database management,
+              testing, deployment and much more.
           </p>
+          </div>
         </div>
         <div className="toolsDiv animated animatedFadeInUp fadeInUp">
           <div>
@@ -80,6 +82,7 @@ const Skills = () => {
 export default Skills;
 
 const Container = styled.div`
+  margin-bottom: 25%;
   @keyframes fadeInUp {
     from {
       transform: translate3d(0, 40px, 0);
@@ -126,6 +129,23 @@ const Container = styled.div`
     margin-bottom: 3px;
     text-shadow: 1px 1px 1px #a9a9a9, 3px 3px 2px darkgray;
   }
+
+  @media only screen and (max-width: 1105px){
+    h1{
+      margin-top: 10%;
+    }
+  } 
+
+  @media only screen and (max-width: 550px){
+    h1{
+      margin-top: 15%;
+    }
+  } 
+
+  @media only screen and (max-width: 490px){
+    h1{
+      margin-top: 8%;
+    }
 `;
 const StyledDiv = styled.div`
   margin-top: 1.5%;
@@ -146,13 +166,19 @@ const StyledDiv = styled.div`
 
   .introDiv {
     width: 45%;
-    margin: 3px 10px;
-    padding: 3px 5px;
+    margin: 3px 12px;
 
     h3 {
       margin-top: 30px;
       margin-bottom: 10px;
+      padding: 3px 5px;
     }
+  }
+
+  .body-par{
+    border: #D3D3D3 0.5px solid;
+    border-radius: 10px;
+    padding: 7px 10px;
 
     span {
       color: #4630ff;
@@ -160,6 +186,19 @@ const StyledDiv = styled.div`
       font-size: 18px;
     }
   }
+
+  @media only screen and (max-width: 550px){
+    display: flex;
+    flex-direction: column;
+
+    .toolsDiv {
+      width: 95%;
+    }
+
+    .introDiv {
+      width: 95%;
+    }
+  } 
 `;
 
 const ParagraghsDiv = styled.div`

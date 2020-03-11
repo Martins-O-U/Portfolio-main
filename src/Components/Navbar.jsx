@@ -65,4 +65,10 @@ const Headers = styled.header`
     border-right: solid 0.75em transparent;
     border-top: solid 0.6em #282828;
   }
+
+  @media only screen and (max-width: 490px){
+    nav {
+      display: none;
+    }
+  }
 `;

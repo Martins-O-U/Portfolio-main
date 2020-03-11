@@ -27,6 +27,15 @@ export const PojectInfo = [
     workedOn: "Worked on both Frontend and the Backend of the project",
     gitHubRepo: `https://github.com/LABS-EU3/lambdaDoor_backend`,
     deployedAt: `https://www.lambdadoor.com/`
+  },
+  {
+    id: 4,
+    name: "Reunite",
+    about:
+      "Reunite is on a mission to help reconnect persons experiencing homelessness with their loved ones",
+    workedOn: "Worked on the Frontend of the project",
+    gitHubRepo: `https://github.com/Martins-O-U/Reunite`,
+    deployedAt: `https://reunite-chi.now.sh`
   }
 ];
 
@@ -60,5 +69,16 @@ export const TechStack = [
     tech8: "Styled-Component",
     tech9: "Google API",
     tech10: "Cloudinary"
+  },
+  {
+    id: 4,
+    tech1: "Materialize",
+    tech2: "PG",
+    tech3: "SQLite3",
+    tech4: "Express",
+    tech5: "bcryptJS",
+    tech6: "Redux",
+    tech7: "React",
+    tech8: "Yup"
   }
 ];
