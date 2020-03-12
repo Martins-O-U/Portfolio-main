@@ -7,7 +7,7 @@ import Footer from "./FooterNav";
 const Skills = () => {
   return (
     <Container>
-      <h1 className="animated animatedFadeInUp fadeInUp">Why hire me?</h1>
+      <h1 className="animated animatedFadeInUp fadeInUp">What I do and use</h1>
       <StyledDiv>
         <div className="introDiv animated animatedFadeInUp fadeInUp">
           <h3>Full Stack Developer</h3>
