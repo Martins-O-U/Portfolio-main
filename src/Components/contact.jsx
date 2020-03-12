@@ -3,17 +3,12 @@ import styled from "styled-components";
 import Socials from "./Socials";
 
 function contact() {
-    function disable_btn() {
-        if (input.value = 0) {
-            document.querySelector(".submit").disabled = true;
-        }
-    }
     return (
         <StyledDiv>
             <div className=" form-container animated animatedFadeInUp fadeInUp">
                 <p>Reach me through the following mediums</p>
                 <Socials />
-                <form action="mailto:martinsonyedikachi@gmail.com">
+                <form action="mailto:martinsonyedikachi@gmail.com" method="post" enctype="text/plain">
                     <div>
                         <input name="Full Name" type="text" placeholder="Full Name" />
                     </div>
