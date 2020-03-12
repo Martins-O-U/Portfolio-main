@@ -10,16 +10,16 @@ function contact() {
                 <Socials />
                 <form action="mailto:martinsonyedikachi@gmail.com" method="post" enctype="text/plain">
                     <div>
-                        <input name="Full Name" type="text" placeholder="Full Name" />
+                        <input name="Full Name" type="text" placeholder="Full Name" required />
                     </div>
                     <div>
-                        <input name="Email" placeholder="Email" />
+                        <input name="Email" placeholder="Email" required />
                     </div>
                     <div>
                         <input name="number" type="number" placeholder="Phone Number" />
                     </div>
                     <div>
-                        <textarea name="comments" maxLength="500" placeholder="Enter Additional information here..." />
+                        <textarea name="comments" maxLength="500" placeholder="Enter Additional information here..." required />
                     </div>
                     <div className="btn-field">
                         <button type="submit" className="submit hvr-radial-out">Submit</button>
