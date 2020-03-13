@@ -111,9 +111,11 @@ const HomeDisplay = styled.div`
   p {
     margin-bottom: 30px;
   }
+  @media only screen and (max-width: 850px){
+    margin-top: 10%;
+  }
 
   @media only screen and (max-width: 600px){
-    margin-top: 10%;
     flex-direction: column;
     
   .intro {
