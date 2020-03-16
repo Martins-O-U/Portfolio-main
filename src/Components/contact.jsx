@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import axios from "axios";
 import styled from "styled-components";
 import Socials from "./Socials";
 
@@ -22,8 +23,21 @@ function Contact(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    props.history.push('/thanks')
+    axios
+      .post('https://portfolio-martins.herokuapp.com/api/comments/', message)
+      .then(res => {
+        props.history.push('/thanks')
+        console.log(res.data)
+      })
+      .catch(error => {
+        console.log(error.message)
+      })
   };
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   props.history.push('/thanks')
+  // };
   return (
     <StyledDiv>
       <div className=" form-container animated animatedFadeInUp fadeInUp">
