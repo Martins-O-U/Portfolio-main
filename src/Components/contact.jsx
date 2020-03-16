@@ -27,21 +27,17 @@ function Contact(props) {
       .post('https://portfolio-martins.herokuapp.com/api/comments/', message)
       .then(res => {
         props.history.push('/thanks')
-        console.log(res.data)
       })
       .catch(error => {
         console.log(error.message)
       })
   };
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   props.history.push('/thanks')
-  // };
   return (
     <StyledDiv>
       <div className=" form-container animated animatedFadeInUp fadeInUp">
-        <p>Reach me through the following mediums</p>
+        <h3 className="p-one">I'd Be Delighted To Receive A Message From You.</h3>
+        <p className="p-two">Please reach out to me through any of the following:</p>
         <Socials />
         <form onSubmit={handleSubmit}>
           <div>
@@ -71,9 +67,14 @@ export default Contact;
 
 const StyledDiv = styled.div`
 text-align: center;
-p{
-    padding-top: 5%;
+.p-one{
+  padding-top: 3%;
+  margin-bottom: 5px
+
+}
+.p-two{
     margin-bottom: 30px;
+    margin-top: 2px
 }
 @keyframes fadeInUp {
     from {
