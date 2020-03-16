@@ -2,13 +2,18 @@ import React from "react"
 import styled from "styled-components";
 import Socials from "./Socials";
 
-function Contact() {
+function Contact(props) {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    props.history.push('/thanks')
+  };
   return (
     <StyledDiv>
       <div className=" form-container animated animatedFadeInUp fadeInUp">
         <p>Reach me through the following mediums</p>
         <Socials />
-        <form action="mailto:martinsonyedikachi@gmail.com" method="post" encType="text/plain">
+        {/* <form action="mailto:martinsonyedikachi@gmail.com" method="post" encType="text/plain"> */}
+        <form onSubmit={handleSubmit}>
           <div>
             <input name="Full Name" type="text" placeholder="Full Name" required />
           </div>

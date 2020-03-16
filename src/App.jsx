@@ -10,6 +10,7 @@ import Projects from "./Components/Projects";
 import SingleProjectInfo from "./Components/SingleProjectInfo";
 import Menu from "./Components/hamburgerMenu";
 import contact from "./Components/contact";
+import Thanks from "./Components/Thanks";
 
 const StyledDiv = styled.div`
   height: 100vh;
@@ -35,6 +36,7 @@ function App() {
       <Route path="/project" component={Projects} />
       <Route path="/singleProject/:id" component={SingleProjectInfo} />
       <Route path="/contact" component={contact} />
+      <Route path="/thanks" component={Thanks} />
     </StyledDiv>
   );
 }
