@@ -149,6 +149,7 @@ const Container = styled.div`
 `;
 const StyledDiv = styled.div`
   margin-top: 1.5%;
+  line-height: 1.6;
   display: flex;
   justify-content: space-between;
 
