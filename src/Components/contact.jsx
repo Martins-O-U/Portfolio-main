@@ -1,60 +1,36 @@
-import React, { useState } from "react"
-import axios from "axios";
+import React from "react"
 import styled from "styled-components";
 import Socials from "./Socials";
 
 function Contact(props) {
-  const contact_information = {
-    name: '',
-    email: '',
-    number: '',
-    comment: ''
-  }
-
-  const [message, setMessage] = useState(contact_information)
-
-  const handleChange = (e) => {
-    e.persist();
-    setMessage({
-      ...message,
-      [e.target.name]: e.target.value
-    })
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios
-      .post('https://portfolio-martins.herokuapp.com/api/comments/', message)
-      .then(res => {
-        props.history.push('/thanks')
-        console.log(res.data)
-      })
-      .catch(error => {
-        console.log(error.message)
-      })
+    props.history.push('/thanks')
+    // console.log(res.data)
   };
-
   return (
     <StyledDiv>
       <div className=" form-container animated animatedFadeInUp fadeInUp">
-        <h3 className="p-one">I'd Be Delighted To Receive A Message From You.</h3>
-        <p className="p-two">Please reach out to me through any of the following:</p>
+        <p>Reach me through the following mediums</p>
         <Socials />
+        {/* <form action="mailto:martinsonyedikachi@gmail.com" method="post" enctype="text/plain"> */}
         <form onSubmit={handleSubmit}>
           <div>
-            <input name="name" type="text" placeholder="Hello, What is your name?" onChange={handleChange} value={message.name} required />
+            <input name="Full Name" type="text" placeholder="Full Name" required />
           </div>
           <div>
-            <input name="email" placeholder="Your Email" onChange={handleChange} value={message.email} required />
+            <input name="Email" placeholder="Email" required />
           </div>
           <div>
-            <input name="number" type="number" placeholder="Your Phone Number" onChange={handleChange} value={message.number} />
+            <input name="number" type="number" placeholder="Phone Number" />
           </div>
           <div>
-            <textarea name="comment" maxLength="500" placeholder="Please type your message here..." onChange={handleChange} value={message.comment} required />
+            <textarea name="comments" maxLength="500" placeholder="Enter Additional information here..." required />
           </div>
           <div className="btn-field">
-            <button type="submit" className="submit hvr-radial-out">Submit</button>
+            <a rel="noopener noreferrer" target="_blank" href="mailto:martinsonyedikachi@gmail.com">
+              <button type="submit" className="submit hvr-radial-out">Submit</button>
+            </a>
           </div>
         </form>
       </div>
