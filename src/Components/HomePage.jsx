@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Socials from "./Socials";
-import selfPix from "./images/pic00.jpg";
+import selfPix from "./images/blinx-3.jpg";
 
 const Home = () => {
   return (

@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
-import selfPix from "./images/pic00.jpg";
+import selfPix from "./images/blinx-2.jpg";
 import Footer from "./FooterNav";
 
 const AboutMe = () => {
@@ -21,7 +22,7 @@ const AboutMe = () => {
               and joined Lambda School as a Full Stack Web Development student.
             </p>
             <p>
-              To this very day my love for coding has never waned, thus while
+              To this very day my love for coding has never wavered, thus while
               learning every day I developed great interpersonal skills as well
               as skills required of a Software Engineer, be it the Front-End or
               Back-End/Database Management. My goal is to contribute towards
@@ -31,6 +32,14 @@ const AboutMe = () => {
               When I am not working on a project, I am either volunteering,
               spending time with family and friends or playing board games.
             </p>
+            <ButtonDiv>
+              <Link to="/project">
+                <span className="hvr-radial-out">Check My Projects</span>
+              </Link>
+              <Link to="/contact">
+                <span className="hvr-radial-out">Contact Me</span>
+              </Link>
+            </ButtonDiv>
           </div>
           <AboutPix>
             <img src={selfPix} alt="My Profile Pix" id="self-img" />
@@ -123,13 +132,14 @@ const StyledContainer = styled.div`
     }
 `;
 const StyledDiv = styled.div`
-  margin: 3% 1%;
+  margin: 1.5% 1%;
+  line-height: 1.6;
   display: flex;
   justify-content: space-between;
 
   .styled-para{
     width: 55%;
-    padding: 3px 10px;
+    padding: 2px 10px;
     border: #D3D3D3 0.5px solid;
     border-radius: 10px;
   }
@@ -165,4 +175,58 @@ const AboutPix = styled.p`
       width: 220px;
     }
   }
+`;
+
+const ButtonDiv = styled.div`
+span {
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  color: black;
+  margin: 10px 15px 15px 0px;
+}
+.hvr-radial-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+  background: #e1e1e1;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-radial-out:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2098d1;
+  border-radius: 100%;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-radial-out:hover,
+.hvr-radial-out:focus,
+.hvr-radial-out:active {
+  color: white;
+}
+.hvr-radial-out:hover:before,
+.hvr-radial-out:focus:before,
+.hvr-radial-out:active:before {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
 `;

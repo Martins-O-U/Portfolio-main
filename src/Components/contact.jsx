@@ -2,13 +2,13 @@ import React from "react"
 import styled from "styled-components";
 import Socials from "./Socials";
 
-function contact() {
+function Contact() {
   return (
     <StyledDiv>
       <div className=" form-container animated animatedFadeInUp fadeInUp">
         <p>Reach me through the following mediums</p>
         <Socials />
-        <form action="mailto:martinsonyedikachi@gmail.com" method="post" enctype="text/plain">
+        <form action="mailto:martinsonyedikachi@gmail.com" method="post" encType="text/plain">
           <div>
             <input name="Full Name" type="text" placeholder="Full Name" required />
           </div>
@@ -32,7 +32,7 @@ function contact() {
   )
 }
 
-export default contact;
+export default Contact;
 
 const StyledDiv = styled.div`
 text-align: center;
