@@ -9,7 +9,7 @@ import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
 import SingleProjectInfo from "./Components/SingleProjectInfo";
 import Menu from "./Components/hamburgerMenu";
-import contact from "./Components/contact";
+import contact from "./Components/Contact";
 
 const StyledDiv = styled.div`
   height: 100vh;
