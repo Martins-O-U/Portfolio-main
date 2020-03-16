@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import axios from "axios";
 import styled from "styled-components";
 import Socials from "./Socials";
 
@@ -22,26 +23,38 @@ function Contact(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    props.history.push('/thanks')
+    axios
+      .post('https://portfolio-martins.herokuapp.com/api/comments/', message)
+      .then(res => {
+        props.history.push('/thanks')
+        console.log(res.data)
+      })
+      .catch(error => {
+        console.log(error.message)
+      })
   };
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   props.history.push('/thanks')
+  // };
   return (
     <StyledDiv>
       <div className=" form-container animated animatedFadeInUp fadeInUp">
         <p>Reach me through the following mediums</p>
         <Socials />
-        {/* <form action="mailto:martinsonyedikachi@gmail.com" method="post" encType="text/plain"> */}
         <form onSubmit={handleSubmit}>
           <div>
             <input name="name" type="text" placeholder="Hello, What is your name?" onChange={handleChange} value={message.name} required />
           </div>
           <div>
-            <input name="Email" placeholder="Email" required />
+            <input name="email" placeholder="Your Email" onChange={handleChange} value={message.email} required />
           </div>
           <div>
-            <input name="number" type="number" placeholder="Phone Number" />
+            <input name="number" type="number" placeholder="Your Phone Number" onChange={handleChange} value={message.number} />
           </div>
           <div>
-            <textarea name="comments" maxLength="500" placeholder="Enter Additional information here..." required />
+            <textarea name="comment" maxLength="500" placeholder="Please type your message here..." onChange={handleChange} value={message.comment} required />
           </div>
           <div className="btn-field">
             <a rel="noopener noreferrer" target="_blank" href="mailto:martinsonyedikachi@gmail.com">
