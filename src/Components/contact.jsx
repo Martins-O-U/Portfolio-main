@@ -1,8 +1,25 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components";
 import Socials from "./Socials";
 
 function Contact(props) {
+  const contact_information = {
+    name: '',
+    email: '',
+    number: '',
+    comment: ''
+  }
+
+  const [message, setMessage] = useState(contact_information)
+
+  const handleChange = (e) => {
+    e.persist();
+    setMessage({
+      ...message,
+      [e.target.name]: e.target.value
+    })
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     props.history.push('/thanks')
@@ -15,7 +32,7 @@ function Contact(props) {
         {/* <form action="mailto:martinsonyedikachi@gmail.com" method="post" encType="text/plain"> */}
         <form onSubmit={handleSubmit}>
           <div>
-            <input name="Full Name" type="text" placeholder="Full Name" required />
+            <input name="name" type="text" placeholder="Hello, What is your name?" onChange={handleChange} value={message.name} required />
           </div>
           <div>
             <input name="Email" placeholder="Email" required />
