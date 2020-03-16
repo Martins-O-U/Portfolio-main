@@ -9,8 +9,7 @@ import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
 import SingleProjectInfo from "./Components/SingleProjectInfo";
 import Menu from "./Components/hamburgerMenu";
-import Contact from "./Components/Contact";
-import Thanks from "./Components/Thanks";
+import contact from "./Components/contact";
 
 const StyledDiv = styled.div`
   height: 100vh;
@@ -35,8 +34,7 @@ function App() {
       <Route path="/skills" component={Skills} />
       <Route path="/project" component={Projects} />
       <Route path="/singleProject/:id" component={SingleProjectInfo} />
-      <Route path="/contact" component={Contact} />
-      <Route path="/thanks" component={Thanks} />
+      <Route path="/contact" component={contact} />
     </StyledDiv>
   );
 }
