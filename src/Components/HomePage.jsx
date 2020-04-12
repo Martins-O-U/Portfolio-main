@@ -140,6 +140,7 @@ const AboutDiv = styled.h3`
     padding: 10px 10px;
     cursor: pointer;
     border-radius: 10px;
+    border: 1px solid #2098d1;
   }
 
   .hvr-radial-out {
@@ -150,7 +151,7 @@ const AboutDiv = styled.h3`
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
     overflow: hidden;
-    background: #e1e1e1;
+    background: #F8F8FF;
     -webkit-transition-property: color;
     transition-property: color;
     -webkit-transition-duration: 0.3s;

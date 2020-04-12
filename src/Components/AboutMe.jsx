@@ -183,6 +183,7 @@ span {
   border-radius: 10px;
   color: black;
   margin: 10px 15px 15px 0px;
+  border: 1px solid #2098d1;
 }
 .hvr-radial-out {
   display: inline-block;
@@ -192,7 +193,7 @@ span {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
   overflow: hidden;
-  background: #e1e1e1;
+  background: #F8F8FF;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
