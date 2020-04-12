@@ -29,10 +29,14 @@ function SingleProject(props) {
       <div className="projectCard animated animatedFadeInUp fadeInUp">
         {calledProject.map(information => (
           <div key={information.id}>
-            <h2 className="intro">{information.name}</h2>
+            <h1 className="intro">{information.name}</h1>
             <hr />
-            <p>{information.about}</p>
+            <p className="about-project"><i>{information.about}</i></p>
             <p className="project-para">{information.workedOn}</p>
+            <ul>
+              <li>{information.responsibility}</li>
+              <li>{information.responsibility2}</li>
+            </ul>
           </div>
         ))}
         {techStacks.map(stack => (
@@ -176,6 +180,12 @@ const StyledDiv = styled.div`
     margin: 13% auto;
     box-shadow: 0px 10px 15px 0 rgba(0, 0, 0, 0.4);
     background-color: #f5f5f5;
+    ul{
+      margin-top: 1.5px;
+    }
+    li {
+      text-align: left;
+    }
   }
   .backbutton {
     display: flex;
@@ -190,9 +200,18 @@ const StyledDiv = styled.div`
   .project-para {
     margin-top: 30px;
     font-size: 15px;
+    text-align: left;
+    margin-bottom: 1.5px;
+  }
+  .about-project{
+    margin-top: 3px;
+    font-weight: 500;
   }
   .intro {
     text-shadow: 1px 1px 1px lightblue, 3px 3px 2px darkgray;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
   p {
     padding: 3px;
