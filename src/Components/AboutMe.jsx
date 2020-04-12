@@ -13,20 +13,18 @@ const AboutMe = () => {
           <div className="styled-para">
             <p>
               I had my first real exposure to how Information Technology works
-              about a year and six months ago, and it was a life defining moment
-              for me. At first, I explored Computer Networking and some aspects
-              of Network Security, within which period I also got introduced to
-              Web Development. Here, I knew I had found my path and began some
-              self-study sessions. By August 2019, I quit all else (which
-              included my Maintenance Supervisor job as a Mechanical Engineer)
+              about a year and six months ago, and it was a life-defining moment for me.
+              At first, I explored Computer Networking and some aspects of Network Security,
+              within which period I also got introduced to Web Development.
+              Here, I knew I had found my path and began some self-study sessions.
+              By August 2019, I quit all else (which included my Maintenance Supervisor job as a Mechanical Engineer)
               and joined Lambda School as a Full Stack Web Development student.
             </p>
             <p>
-              To this very day my love for coding has never wavered, thus while
-              learning every day I developed great interpersonal skills as well
-              as skills required of a Software Engineer, be it the Front-End or
-              Back-End/Database Management. My goal is to contribute towards
-              making life easier using smart technology.
+              To this very day, my love for coding never wavered,
+              while learning daily I developed great interpersonal skills as well as skills
+              required of a Software Engineer, be it the Front-End or Back-End/Database Management.
+              My goal is to contribute towards making life easier using smart technology.
             </p>
             <p>
               When I am not working on a project, I am either volunteering,
@@ -162,6 +160,7 @@ const AboutPix = styled.p`
   img {
     border-radius: 20px;
     width: 280px;
+    border: 5px solid #F4A460;
   }
 
   @media only screen and (max-width: 700px){
@@ -184,6 +183,7 @@ span {
   border-radius: 10px;
   color: black;
   margin: 10px 15px 15px 0px;
+  border: 1px solid #2098d1;
 }
 .hvr-radial-out {
   display: inline-block;
@@ -193,7 +193,7 @@ span {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
   overflow: hidden;
-  background: #e1e1e1;
+  background: #F8F8FF;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;

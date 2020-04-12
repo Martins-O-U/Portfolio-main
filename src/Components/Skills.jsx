@@ -13,15 +13,12 @@ const Skills = () => {
           <h3>Full Stack Developer</h3>
           <div className='body-par'>
             <p>
-              As a Full-Stack Web Application developer with a passion for web
-              technologies, I strive to follow best practices and use
-              industry-standard tools and methods which includes git-flow, Test
-              Driven Development (using
-            <span> Jest, React Testing Library and suppertest</span>), Continous
-            Integration (using
-            <span> Travis CI and Coveralls</span>
-            ), linting (using
-            <span> Eslint and Prettier</span>) etc.
+              As a Full-Stack Web Application developer with a passion for web technologies,
+              I strive to follow best practices and use industry-standard tools and methods
+              such as Test Driven Development (using
+              <span> Jest, React Testing Library and Supertest</span>), Continous
+              Integration (using <span> Travis CI and Coveralls</span>), Linting (using
+              <span> Eslint and Prettier</span>), Git-flow, etc.
           </p>
             <p>
               I have come to develop various technical skills such as
@@ -35,16 +32,16 @@ const Skills = () => {
           <div>
             <h3>Frontend Development</h3>
             <ParagraghsDiv>
-              <p>HTML</p>
-              <p>CSS</p>
               <p>React</p>
               <p>Redux</p>
-              <p>Styled-Components</p>
+              <p>Google Api</p>
               <p>JavaScript</p>
               <p>Zeit</p>
               <p>Netlify</p>
               <p>React Testing Library</p>
-              <p>Google Api</p>
+              <p>Styled-Components</p>
+              <p>HTML</p>
+              <p>CSS</p>
             </ParagraghsDiv>
           </div>
           <div>
@@ -52,11 +49,11 @@ const Skills = () => {
             <ParagraghsDiv>
               <p>Node JS</p>
               <p>Python</p>
+              <p>REST API</p>
+              <p>Express</p>
               <p>PostgreSQL</p>
               <p>SQLite</p>
               <p>Heroku</p>
-              <p>REST API</p>
-              <p>Express</p>
               <p>MongoDB</p>
             </ParagraghsDiv>
           </div>
@@ -182,8 +179,8 @@ const StyledDiv = styled.div`
     padding: 7px 10px;
 
     span {
-      color: #4630ff;
-      font-weight: 1000px;
+      color: #4682B4;
+      font-weight: 500;
       font-size: 18px;
     }
   }

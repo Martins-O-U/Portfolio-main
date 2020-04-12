@@ -12,6 +12,8 @@ function Contact(props) {
   }
 
   const [message, setMessage] = useState(contact_information)
+  const [button, setButton] = useState(false)
+  const [submitAction, setsubmitAction] = useState(false)
 
   const handleChange = (e) => {
     e.persist();
@@ -23,6 +25,8 @@ function Contact(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setButton(!button)
+    setsubmitAction(!submitAction)
     axios
       .post('https://portfolio-martins.herokuapp.com/api/comments/', message)
       .then(res => {
@@ -36,26 +40,28 @@ function Contact(props) {
   return (
     <StyledDiv>
       <div className=" form-container animated animatedFadeInUp fadeInUp">
-        <h3 className="p-one">I'd Be Delighted To Receive A Message From You.</h3>
+        <h2 className="p-one">I'd Be Delighted To Receive A Message From You.</h2>
         <p className="p-two">Please reach out to me through any of the following:</p>
         <Socials />
         <form onSubmit={handleSubmit}>
-          <div>
+          <div className={`${submitAction ? 'show' : 'hide'}`}>
+            <p><span>Submitting....</span></p>
+          </div>
+          <div className="required">* are required</div>
+          <div><label>*</label>
             <input name="name" type="text" placeholder="Hello, What is your name?" onChange={handleChange} value={message.name} required />
           </div>
-          <div>
+          <div><label>*</label>
             <input name="email" placeholder="Your Email" onChange={handleChange} value={message.email} required />
           </div>
           <div>
             <input name="number" type="number" placeholder="Your Phone Number" onChange={handleChange} value={message.number} />
           </div>
-          <div>
+          <div><label>*</label>
             <textarea name="comment" maxLength="500" placeholder="Please type your message here..." onChange={handleChange} value={message.comment} required />
           </div>
           <div className="btn-field">
-            <a rel="noopener noreferrer" target="_blank" href="mailto:martinsonyedikachi@gmail.com">
-              <button type="submit" className="submit hvr-radial-out">Submit</button>
-            </a>
+            <button type="submit" className="submit hvr-radial-out" disabled={button}>Submit</button>
           </div>
         </form>
       </div>
@@ -69,12 +75,31 @@ const StyledDiv = styled.div`
 text-align: center;
 .p-one{
   padding-top: 3%;
-  margin-bottom: 5px
-
+  margin-bottom: 5px;
+}
+label{
+  color: red;
+}
+.hide{
+  display: none;
+}
+.show{
+  display: block;
 }
 .p-two{
     margin-bottom: 30px;
-    margin-top: 2px
+    margin-top: 2px;
+}
+span{
+  background: #7CFC00;
+  font-size: 18px;
+  padding:3px 70px;
+  margin-top: 7px;
+  margin-bottom: 1px;
+}
+.required{
+  font-size: 12px;
+  color: red;
 }
 @keyframes fadeInUp {
     from {

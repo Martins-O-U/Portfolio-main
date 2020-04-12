@@ -19,6 +19,27 @@ function Projects() {
               className="cardImg"
               top
               width="100%"
+              src={lambdaDoor}
+              alt="Card image cap"
+            />
+            <CardBody>
+              <div className="card-content">
+                <CardTitle>
+                  <strong>LambdaDoor</strong>
+                </CardTitle>
+                <Link to={`/singleProject/3`}>
+                  <span className="hvr-radial-out">About Project</span>
+                </Link>
+              </div>
+            </CardBody>
+          </Card>
+        </div>
+        <div className="card">
+          <Card>
+            <CardImg
+              className="cardImg"
+              top
+              width="100%"
               src={refugeeStories}
               alt="Card image cap"
             />
@@ -49,27 +70,6 @@ function Projects() {
                   <strong>Local-Park-Passport</strong>
                 </CardTitle>
                 <Link to={`/singleProject/2`}>
-                  <span className="hvr-radial-out">About Project</span>
-                </Link>
-              </div>
-            </CardBody>
-          </Card>
-        </div>
-        <div className="card">
-          <Card>
-            <CardImg
-              className="cardImg"
-              top
-              width="100%"
-              src={lambdaDoor}
-              alt="Card image cap"
-            />
-            <CardBody>
-              <div className="card-content">
-                <CardTitle>
-                  <strong>LambdaDoor</strong>
-                </CardTitle>
-                <Link to={`/singleProject/3`}>
                   <span className="hvr-radial-out">About Project</span>
                 </Link>
               </div>
