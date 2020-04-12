@@ -140,6 +140,7 @@ const StyledDiv = styled.div`
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
+    margin-top: 20px;
 
   }
   span {

@@ -160,6 +160,7 @@ const AboutPix = styled.p`
   img {
     border-radius: 20px;
     width: 280px;
+    border: 5px solid #F4A460;
   }
 
   @media only screen and (max-width: 700px){

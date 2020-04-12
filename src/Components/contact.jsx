@@ -36,7 +36,7 @@ function Contact(props) {
   return (
     <StyledDiv>
       <div className=" form-container animated animatedFadeInUp fadeInUp">
-        <h3 className="p-one">I'd Be Delighted To Receive A Message From You.</h3>
+        <h2 className="p-one">I'd Be Delighted To Receive A Message From You.</h2>
         <p className="p-two">Please reach out to me through any of the following:</p>
         <Socials />
         <form onSubmit={handleSubmit}>

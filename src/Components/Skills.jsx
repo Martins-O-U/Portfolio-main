@@ -179,9 +179,8 @@ const StyledDiv = styled.div`
     padding: 7px 10px;
 
     span {
-      // color: #000080;
-      color: #010191;
-      font-weight: 999px;
+      color: #4682B4;
+      font-weight: 500;
       font-size: 18px;
     }
   }

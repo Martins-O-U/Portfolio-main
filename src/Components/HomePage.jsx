@@ -80,7 +80,7 @@ const HomeDisplay = styled.div`
   display: flex;
   margin: 5% auto;
   text-align: center;
-  max-width: calc(100%-50px);
+  max-width: 1200px;
   width: 97%;
   padding-bottom: 20px;
   padding-top: 10%;
@@ -90,6 +90,7 @@ const HomeDisplay = styled.div`
     margin-top: 3%;
     img {
       border-radius: 50%;
+      border: 5px solid #F4A460;
       width: 260px;
     }
     @media only screen and (max-width: 750px){
