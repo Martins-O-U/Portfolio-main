@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Martins Portfolio",
+  "name": "Martin-O-U",
   "icons": [
     {
       "src": "favicon.jpg",
@@ -11,6 +11,26 @@
       "src": "favicon.jpg",
       "type": "image/jpg",
       "sizes": "192x192"
+    },
+    {
+      "src": "favicon.jpg",
+      "type": "image/jpg",
+      "sizes": "320x320"
+    },
+    {
+      "src": "favicon.jpg",
+      "type": "image/jtg",
+      "sizes": "360x360"
+    },
+    {
+      "src": "favicon.jpg",
+      "type": "image/jpg",
+      "sizes": "375x375"
+    },
+    {
+      "src": "favicon.jpg",
+      "type": "image/jpg",
+      "sizes": "411x411"
     },
     {
       "src": "favicon.jpg",
