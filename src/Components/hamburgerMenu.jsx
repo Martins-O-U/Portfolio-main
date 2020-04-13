@@ -10,17 +10,22 @@ function Nav() {
     const handleMenuButton = () => {
         setisSidebarOpen(!isSidebarOpen)
     };
+    const autocloseMenu = () => {
+        setTimeout(() => {
+            setisSidebarOpen(!isSidebarOpen)
+        }, 5000)
+    }
     return (
         <StyledDiv>
             <div className="menu-button" onClick={handleMenuButton}><FontAwesomeIcon icon={faBars} size="2x" /></div>
             <nav className={`nav ${isSidebarOpen ? 'show' : ''}`}>
                 <div className="close" onClick={handleMenuButton}><FontAwesomeIcon icon={faTimes} size="1x" /></div>
                 <div className="menu-items">
-                    <div className="menu-list"><NavLink to="/">Home</NavLink></div>
-                    <div className="menu-list"><NavLink to="/about">About</NavLink></div>
-                    <div className="menu-list"><NavLink to="/skills">Skills</NavLink></div>
-                    <div className="menu-list"><NavLink to="/project">Project</NavLink></div>
-                    <div className="menu-list"><NavLink to="/contact">Contact</NavLink></div>
+                    <div className="menu-list" onClick={autocloseMenu}><NavLink to="/">Home</NavLink></div>
+                    <div className="menu-list" onClick={autocloseMenu}><NavLink to="/about">About</NavLink></div>
+                    <div className="menu-list" onClick={autocloseMenu}><NavLink to="/skills">Skills</NavLink></div>
+                    <div className="menu-list" onClick={autocloseMenu}><NavLink to="/project">Project</NavLink></div>
+                    <div className="menu-list" onClick={autocloseMenu}><NavLink to="/contact">Contact</NavLink></div>
                 </div>
             </nav>
         </StyledDiv>
