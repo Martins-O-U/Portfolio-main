@@ -93,9 +93,8 @@ const StyledContainer = styled.div`
 
   h1 {
     margin-top: 5%;
-    margin-left: 1%;
     font-size: 25px;
-    text-align: left;
+    text-align: center;
     margin-bottom: 3px;
     text-shadow: 1px 1px 1px #a9a9a9, 3px 3px 2px darkgray;
   }
@@ -127,6 +126,8 @@ const StyledContainer = styled.div`
   @media only screen and (max-width: 490px){
     h1{
       margin-top: 8%;
+      text-align: left;
+      margin-left: 1%;
     }
 `;
 const StyledDiv = styled.div`
@@ -140,6 +141,7 @@ const StyledDiv = styled.div`
     padding: 2px 10px;
     border: #D3D3D3 0.5px solid;
     border-radius: 10px;
+    margin-left: 2%;
   }
 
   @media only screen and (max-width: 700px){

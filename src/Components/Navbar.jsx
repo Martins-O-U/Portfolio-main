@@ -1,19 +1,20 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import styled from "styled-components";
+import MOU from "./images/MOU.png";
 
 const Navbar = () => {
   return (
     <Headers>
       <nav>
         <div>
-          <NavLink to="/">Home</NavLink>
+          <Link to="/"><img src={MOU} alt="logo" /></Link>
         </div>
         <div>
-          <NavLink to="/about">About</NavLink>
-          <NavLink to="/skills">Skills</NavLink>
-          <NavLink to="/project">Projects</NavLink>
-          <NavLink to="/contact">Contact</NavLink>
+          <NavLink to="/about" className="Navlinks">About</NavLink>
+          <NavLink to="/skills" className="Navlinks">Skills</NavLink>
+          <NavLink to="/project" className="Navlinks">Projects</NavLink>
+          <NavLink to="/contact" className="Navlinks">Contact</NavLink>
         </div>
       </nav>
     </Headers>
@@ -36,6 +37,11 @@ const Headers = styled.header`
     line-height: 3.5em;
     display: flex;
     justify-content: space-between;
+
+    img{
+      margin-top: 7px;
+      border-radius: 7px;
+    }
   }
 
   nav a {
@@ -53,7 +59,7 @@ const Headers = styled.header`
     padding: 0 1.25em;
   }
 
-  nav a:hover {
+  .Navlinks:hover {
     color: #fff !important;
     background: #696969;
     padding-bottom: 5px;
