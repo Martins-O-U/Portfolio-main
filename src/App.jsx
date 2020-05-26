@@ -17,7 +17,6 @@ const StyledDiv = styled.div`
   overflow: hidden;
   background-image: url(${img});
   background-color: #fafafa;
-  margin: 0 20px;
 
   @media only screen and (max-width: 1105px){
     overflow: auto;

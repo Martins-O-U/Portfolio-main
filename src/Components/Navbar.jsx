@@ -6,11 +6,15 @@ const Navbar = () => {
   return (
     <Headers>
       <nav>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/about">About</NavLink>
-        <NavLink to="/skills">Skills</NavLink>
-        <NavLink to="/project">Projects</NavLink>
-        <NavLink to="/contact">Contact</NavLink>
+        <div>
+          <NavLink to="/">Home</NavLink>
+        </div>
+        <div>
+          <NavLink to="/about">About</NavLink>
+          <NavLink to="/skills">Skills</NavLink>
+          <NavLink to="/project">Projects</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
+        </div>
       </nav>
     </Headers>
   );
@@ -30,6 +34,8 @@ const Headers = styled.header`
     cursor: default;
     height: 3.5em;
     line-height: 3.5em;
+    display: flex;
+    justify-content: space-between;
   }
 
   nav a {

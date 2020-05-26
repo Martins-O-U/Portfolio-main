@@ -54,7 +54,7 @@ function Contact(props) {
           <div><label>*</label>
             <input name="email" placeholder="Your Email" onChange={handleChange} value={message.email} required />
           </div>
-          <div>
+          <div className="number-class">
             <input name="number" type="number" placeholder="Your Phone Number" onChange={handleChange} value={message.number} />
           </div>
           <div><label>*</label>
@@ -100,6 +100,9 @@ span{
 .required{
   font-size: 12px;
   color: red;
+}
+.number-class{
+  padding-left: 5px;
 }
 @keyframes fadeInUp {
     from {
@@ -165,13 +168,14 @@ span{
       margin-bottom: 5px;
   }
   .submit{
-    width: 80px;
+    width: 75px;
     margin-bottom: 3%;
     border-radius: 5px;
-    padding: 5px 7px;
+    padding: 5px 4px;
     cursor: pointer;
     border: 1px solid #2098d1;
     border-radius: 10px;
+    font-size: 14.5px;
    }
    .btn-field{
     text-align: left;

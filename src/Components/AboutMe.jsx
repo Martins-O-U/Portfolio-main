@@ -93,7 +93,7 @@ const StyledContainer = styled.div`
 
   h1 {
     margin-top: 5%;
-    margin-left: 10px;
+    margin-left: 1%;
     font-size: 25px;
     text-align: left;
     margin-bottom: 3px;
