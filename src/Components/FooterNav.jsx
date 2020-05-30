@@ -108,7 +108,7 @@ bottom: 0;
     padding: 3px 3px;
     justify-content: space-between;
     align-items: center;
-    max-width: 90%;
+    max-width: 93%;
     margin: auto;
 
     @media only screen and (max-width: 620px){

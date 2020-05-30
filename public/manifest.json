@@ -3,37 +3,37 @@
   "name": "Martin-O-U",
   "icons": [
     {
-      "src": "favicon2.png",
+      "src": "favicon3.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/png"
     },
     {
-      "src": "favicon2.png",
+      "src": "favicon3.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "favicon2.png",
+      "src": "favicon3.png",
       "type": "image/png",
       "sizes": "320x320"
     },
     {
-      "src": "favicon2.png",
+      "src": "favicon3.png",
       "type": "image/png",
       "sizes": "360x360"
     },
     {
-      "src": "favicon2.png",
+      "src": "favicon3.png",
       "type": "image/png",
       "sizes": "375x375"
     },
     {
-      "src": "favicon2.png",
+      "src": "favicon3.png",
       "type": "image/png",
       "sizes": "411x411"
     },
     {
-      "src": "favicon2.png",
+      "src": "favicon3.png",
       "type": "image/png",
       "sizes": "512x512"
     }
