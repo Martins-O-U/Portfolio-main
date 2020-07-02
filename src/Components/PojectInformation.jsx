@@ -27,7 +27,7 @@ export const PojectInfo = [
     about:
       "The one-stop portal for Lambda graduates looking for company information, reviews and interview processes in the quest for a job",
     workedOn: "Worked on both Frontend and the Backend of the project with a team of seven developers",
-    responsibility: "Built the landing page page footer using Styled-component and Font-Awesome",
+    responsibility: "Built the landing page footer using Styled-component and Font-Awesome",
     responsibility2: "Created the App's documentation with walk-through video clips using giphy, then integrated exception monitoring with Sentery",
     gitHubRepo: `https://github.com/LABS-EU3/lambdaDoor_backend`,
     deployedAt: `https://www.lambdadoor.com/`
@@ -42,6 +42,17 @@ export const PojectInfo = [
     responsibility2: "Made use of Font-Awesome Icons for the Footer social links display",
     gitHubRepo: `https://github.com/Martins-O-U/Reunite`,
     deployedAt: `https://reunite-chi.now.sh`
+  },
+  {
+    id: 5,
+    name: "StemJets",
+    about:
+      "STEMJets offers a platform for schools and parents to provide flexible experiential STEM (Science, Technology, Engineering and Mathematics) learning to pre-university students through a collaborative and low-cost approach.",
+    workedOn: "Worked alone on the Frontend and Backend of the project",
+    responsibility: "Built the Landing, About, Blog and Contact pages using Styled-Component and Reactstrap for styling",
+    responsibility2: "Made use of Nodemailer for contact/connection with guest on volunteering, while JWt and Bcrypt was used for authentication",
+    gitHubRepo: `https://github.com/Martins-O-U/Stemjet-netlify`,
+    deployedAt: `https://stemjet.netlify.app/`
   }
 ];
 
@@ -86,5 +97,17 @@ export const TechStack = [
     tech6: "Redux",
     tech7: "React",
     tech8: "Font Awesome"
+  },
+  {
+    id: 5,
+    tech1: "Styled-Component",
+    tech2: "PG",
+    tech3: "SQLite3",
+    tech4: "Express",
+    tech5: "bcryptJS",
+    tech6: "Reactstrap",
+    tech7: "React",
+    tech8: "Font Awesome",
+    tech9: "Nodemailer"
   }
 ];
