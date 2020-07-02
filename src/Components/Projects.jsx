@@ -6,6 +6,7 @@ import lambdaDoor from "./images/LambdaDoor.png";
 import localPark from "./images/Local-Park.png";
 import refugeeStories from "./images/Refugee-stories.png";
 import reunite from "./images/Reunite.png";
+import stemjet from "./images/Stemjet.png";
 import Footer from "./FooterNav";
 
 function Projects() {
@@ -91,6 +92,27 @@ function Projects() {
                   <strong>Reunite</strong>
                 </CardTitle>
                 <Link to={`/singleProject/4`}>
+                  <span className="hvr-radial-out">About Project</span>
+                </Link>
+              </div>
+            </CardBody>
+          </Card>
+        </div>
+        <div className="card">
+          <Card>
+            <CardImg
+              className="cardImg"
+              top
+              width="100%"
+              src={stemjet}
+              alt="Card image cap"
+            />
+            <CardBody>
+              <div className="card-content">
+                <CardTitle>
+                  <strong>StemJets</strong>
+                </CardTitle>
+                <Link to={`/singleProject/5`}>
                   <span className="hvr-radial-out">About Project</span>
                 </Link>
               </div>

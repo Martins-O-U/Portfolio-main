@@ -178,7 +178,7 @@ const StyledDiv = styled.div`
     max-width: 750px;
     width: 95%;
     padding: 10px 5px;
-    margin: 13% auto;
+    margin: 10% auto;
     box-shadow: 0px 10px 15px 0 rgba(0, 0, 0, 0.4);
     background-color: #f5f5f5;
     ul{
