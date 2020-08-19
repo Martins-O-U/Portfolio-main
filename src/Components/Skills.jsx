@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import img from "../Components/images/bg.png";
 import { } from "@fortawesome/react-fontawesome";
 import { } from "@fortawesome/free-solid-svg-icons";
 import Footer from "./FooterNav";
@@ -29,7 +30,7 @@ const Skills = () => {
           </div>
         </div>
         <div className="toolsDiv animated animatedFadeInUp fadeInUp">
-          <div>
+          <div className="toolsDivA">
             <h3>Frontend Development</h3>
             <ParagraghsDiv>
               <p>React</p>
@@ -44,7 +45,7 @@ const Skills = () => {
               <p>CSS</p>
             </ParagraghsDiv>
           </div>
-          <div>
+          <div className="toolsDivA">
             <h3>Backend Development</h3>
             <ParagraghsDiv>
               <p>Node JS</p>
@@ -57,7 +58,7 @@ const Skills = () => {
               <p>MongoDB</p>
             </ParagraghsDiv>
           </div>
-          <div>
+          <div className="toolsDivA">
             <h3>General Tools</h3>
             <ParagraghsDiv>
               <p>GitHub</p>
@@ -143,6 +144,16 @@ const Container = styled.div`
     h1{
       margin-top: 8%;
     }
+  }
+
+  .toolsDivA{
+    background-image: url(${img});
+    background-color: #FFF8DC;
+    padding-left: 7px;
+    padding-right: 2px;
+    border-radius: 20px; 
+    padding-bottom: 5px; 
+  }
 `;
 const StyledDiv = styled.div`
   margin-top: 1.5%;
@@ -165,6 +176,11 @@ const StyledDiv = styled.div`
   .introDiv {
     width: 45%;
     margin: 3px 12px;
+    background-image: url(${img});
+    background-color: #FFF8DC;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 20px;
 
     h3 {
       margin-top: 30px;
@@ -176,7 +192,7 @@ const StyledDiv = styled.div`
   .body-par{
     border: #D3D3D3 0.5px solid;
     border-radius: 10px;
-    padding: 7px 10px;
+    padding: 3px 5px;
 
     span {
       color: #4682B4;

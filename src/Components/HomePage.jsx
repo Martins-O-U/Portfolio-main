@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Socials from "./Socials";
 import selfPix from "./images/blinx-3.jpg";
+import img from "../Components/images/bg.png";
 
 const Home = () => {
   return (
@@ -268,6 +269,10 @@ const HomeDisplay = styled.div`
   .intro {
     width: 47%;
     margin-top: 3%;
+    background-image: url(${img});
+    background-color: #FFF8DC;
+    border-radius: 30px;
+    padding-bottom: 15px;
   }
   p {
     margin-bottom: 30px;

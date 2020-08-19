@@ -2,7 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { Route } from "react-router-dom";
 import Home from "./Components/HomePage";
-import img from "./Components/images/bg.png";
+// import img from "./Components/images/bg.png";
+import img from "./Components/images/images.jpg";
 import Navbar from "./Components/Navbar";
 import AboutMe from "./Components/AboutMe";
 import Skills from "./Components/Skills";
@@ -18,7 +19,6 @@ const StyledDiv = styled.div`
   height: 100vh;
   overflow: hidden;
   background-image: url(${img});
-  background-color: #fafafa;
 
   @media only screen and (max-width: 1105px){
     overflow: auto;
