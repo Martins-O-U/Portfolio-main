@@ -152,7 +152,7 @@ const Container = styled.div`
     padding-left: 7px;
     padding-right: 2px;
     border-radius: 20px; 
-    padding-bottom: 5px; 
+    padding-bottom: 7px; 
   }
 `;
 const StyledDiv = styled.div`
