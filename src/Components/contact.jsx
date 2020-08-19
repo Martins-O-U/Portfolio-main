@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import axios from "axios";
 import styled from "styled-components";
 import Socials from "./Socials";
+import img from "../Components/images/bg.png";
 
 function Contact(props) {
   const contact_information = {
@@ -152,6 +153,8 @@ span{
     text-align: center;
     box-shadow: 0 -1px 0 #e0e0e0, 0 7px 10px rgba(0, 0, 0, 0.12),
     0 2px 4px rgba(0, 0, 0, 0.24);
+    background-image: url(${img});
+    background-color: #FFF8DC;
   }
   form{
       margin-top: 30px;
@@ -190,6 +193,7 @@ span{
     position: relative;
     overflow: hidden;
     // background: #e1e1e1;
+    background: #FFF8DC;
     -webkit-transition-property: color;
     transition-property: color;
     -webkit-transition-duration: 0.3s;

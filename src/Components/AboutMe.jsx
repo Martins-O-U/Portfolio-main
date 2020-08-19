@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import selfPix from "./images/blinx-2.jpg";
+import img from "../Components/images/bg.png";
 import Footer from "./FooterNav";
 
 const AboutMe = () => {
@@ -142,6 +143,8 @@ const StyledDiv = styled.div`
     border: #D3D3D3 0.5px solid;
     border-radius: 10px;
     margin-left: 2%;
+    background-image: url(${img});
+    background-color: #FFF8DC;
   }
 
   @media only screen and (max-width: 700px){
@@ -195,7 +198,8 @@ span {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
   overflow: hidden;
-  background: #F8F8FF;
+  background: #FFF8DC;
+  // background: #F8F8FF;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;

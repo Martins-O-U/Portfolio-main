@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Socials from "./Socials";
 import selfPix from "./images/blinx-3.jpg";
+import img from "../Components/images/bg.png";
 
 const Home = () => {
   return (
@@ -268,6 +269,10 @@ const HomeDisplay = styled.div`
   .intro {
     width: 47%;
     margin-top: 3%;
+    background-image: url(${img});
+    background-color: #FFF8DC;
+    border-radius: 30px;
+    padding-bottom: 15px;
   }
   p {
     margin-bottom: 30px;
@@ -311,7 +316,8 @@ const AboutDiv = styled.h3`
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
     overflow: hidden;
-    background: #F8F8FF;
+    // background: #F8F8FF;
+    background: #FFF8DC;
     -webkit-transition-property: color;
     transition-property: color;
     -webkit-transition-duration: 0.3s;
