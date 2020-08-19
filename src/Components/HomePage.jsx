@@ -316,7 +316,8 @@ const AboutDiv = styled.h3`
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
     overflow: hidden;
-    background: #F8F8FF;
+    // background: #F8F8FF;
+    background: #FFF8DC;
     -webkit-transition-property: color;
     transition-property: color;
     -webkit-transition-duration: 0.3s;

@@ -193,6 +193,7 @@ span{
     position: relative;
     overflow: hidden;
     // background: #e1e1e1;
+    background: #FFF8DC;
     -webkit-transition-property: color;
     transition-property: color;
     -webkit-transition-duration: 0.3s;
