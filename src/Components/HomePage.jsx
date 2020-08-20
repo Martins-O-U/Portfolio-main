@@ -286,6 +286,7 @@ const HomeDisplay = styled.div`
     
   .intro {
     width: 95%;
+    margin-left: 10px;
   }
 
   .self {
