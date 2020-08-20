@@ -30,33 +30,40 @@ const Skills = () => {
           </div>
         </div>
         <div className="toolsDiv animated animatedFadeInUp fadeInUp">
-          <div className="toolsDivA">
-            <h3>Frontend Development</h3>
-            <ParagraghsDiv>
-              <p>React</p>
-              <p>Redux</p>
-              <p>Google Api</p>
-              <p>JavaScript</p>
-              <p>Zeit</p>
-              <p>Netlify</p>
-              <p>React Testing Library</p>
-              <p>Styled-Components</p>
-              <p>HTML</p>
-              <p>CSS</p>
-            </ParagraghsDiv>
-          </div>
-          <div className="toolsDivA">
-            <h3>Backend Development</h3>
-            <ParagraghsDiv>
-              <p>Node JS</p>
-              <p>Python</p>
-              <p>REST API</p>
-              <p>Express</p>
-              <p>PostgreSQL</p>
-              <p>SQLite</p>
-              <p>Heroku</p>
-              <p>MongoDB</p>
-            </ParagraghsDiv>
+          <div className="toolsDivA skill">
+            <div className="badge">
+              <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="aaeb2f5c-a65b-4c09-b29d-d471acbf6b6b" data-share-badge-host="https://www.youracclaim.com"></div>
+            </div>
+            <div className="Techskill">
+              <div>
+                <h3>Frontend Development</h3>
+                <ParagraghsDiv>
+                  <p>React</p>
+                  <p>Redux</p>
+                  <p>Google Api</p>
+                  <p>JavaScript</p>
+                  <p>Zeit</p>
+                  <p>Netlify</p>
+                  <p>React Testing Library</p>
+                  <p>Styled-Components</p>
+                  <p>HTML</p>
+                  <p>CSS</p>
+                </ParagraghsDiv>
+              </div>
+              <div>
+                <h3>Backend Development</h3>
+                <ParagraghsDiv>
+                  <p>Node JS</p>
+                  <p>Python</p>
+                  <p>REST API</p>
+                  <p>Express</p>
+                  <p>PostgreSQL</p>
+                  <p>SQLite</p>
+                  <p>Heroku</p>
+                  <p>MongoDB</p>
+                </ParagraghsDiv>
+              </div>
+            </div>
           </div>
           <div className="toolsDivA">
             <h3>General Tools</h3>
@@ -154,7 +161,20 @@ const Container = styled.div`
     border-radius: 20px; 
     padding-bottom: 7px; 
   }
+
+  .skill{
+    display: flex;
+  }
+
+  .Techskill{
+    margin-left: 10px;
+  }
+
+  .badge{
+    margin-top: 20px;
+  }
 `;
+
 const StyledDiv = styled.div`
   margin-top: 1.5%;
   line-height: 1.6;
@@ -163,11 +183,11 @@ const StyledDiv = styled.div`
 
   .toolsDiv {
     width: 53%;
-    margin: 3px 10px;
+    margin: 3px 8px;
     padding: 3px 5px;
 
     h3 {
-      margin-top: 30px;
+      margin-top: 20px;
       margin-bottom: 10px;
       padding-left: 3px;
     }
@@ -206,11 +226,11 @@ const StyledDiv = styled.div`
     flex-direction: column;
 
     .toolsDiv {
-      width: 95%;
+      width: 94%;
     }
 
     .introDiv {
-      width: 95%;
+      width: 92%;
     }
   } 
 `;
