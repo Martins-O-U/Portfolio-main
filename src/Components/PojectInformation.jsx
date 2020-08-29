@@ -5,7 +5,7 @@ export const PojectInfo = [
     about:
       "A collection of stories about refugees. The App aims to share the pains and losses experienced by refugees and solicit for world wide assistance",
     workedOn: "Worked with another React developer where we both focussed on the Frontend of the project",
-    responsibility: "Built the Log-In page with its client sdie authentication using React and photos from unsplash Api",
+    responsibility: "Built the Log-In page with its client side authentication using React and photos from unsplash Api",
     responsibility2: "Built the Admin's dashboard and styled it using Styled-component",
     gitHubRepo: `https://github.com/Martins-O-U/Refugees_Stories`,
     deployedAt: `https://refugeesstories.blinx.now.sh`,
@@ -49,7 +49,7 @@ export const PojectInfo = [
     about:
       "STEMJets offers a platform for schools and parents to provide flexible experiential STEM (Science, Technology, Engineering and Mathematics) learning to pre-university students through a collaborative and low-cost approach.",
     workedOn: "Worked alone on the Frontend and Backend of the project",
-    responsibility: "Built the Landing, About, Blog and Contact pages using Styled-Component and Reactstrap for styling",
+    responsibility: "Built the Landing, About, and Contact pages using Styled-Component and Reactstrap for styling",
     responsibility2: "Made use of Nodemailer for contact/connection with guest on volunteering, while JWt and Bcrypt was used for authentication",
     gitHubRepo: `https://github.com/Martins-O-U/Stemjet-netlify`,
     deployedAt: `https://stemjet.netlify.app/`
@@ -104,10 +104,9 @@ export const TechStack = [
     tech2: "PG",
     tech3: "SQLite3",
     tech4: "Express",
-    tech5: "bcryptJS",
+    tech5: "Nodemailer",
     tech6: "Reactstrap",
     tech7: "React",
-    tech8: "Font Awesome",
-    tech9: "Nodemailer"
+    tech8: "Font Awesome"
   }
 ];

@@ -51,7 +51,7 @@ display: none;
 }
 a{
     text-decoration: none;
-    color: #fff;
+    color: #FFF8DC;
     display: flex;
     padding: 10px 16px;
     border-bottom: 1px solid #555;

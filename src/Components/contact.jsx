@@ -155,6 +155,7 @@ span{
     0 2px 4px rgba(0, 0, 0, 0.24);
     background-image: url(${img});
     background-color: #FFF8DC;
+    border-radius: 20px;
   }
   form{
       margin-top: 30px;
