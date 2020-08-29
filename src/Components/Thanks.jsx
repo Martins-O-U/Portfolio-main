@@ -2,14 +2,14 @@ import React from "react";
 import styled from "styled-components";
 
 function Thanks() {
-    return (
-        <StyledDiv>
-            <div className="box-container animated animatedFadeInUp fadeInUp">
-                <h2>Thank You For Contacting Me.</h2>
-                <p><i>Let's explore possibilities!</i></p>
-            </div>
-        </StyledDiv>
-    )
+  return (
+    <StyledDiv>
+      <div className="box-container animated animatedFadeInUp fadeInUp">
+        <h2>Thank You For Contacting Me.</h2>
+        <p><i>Let's explore possibilities!</i></p>
+      </div>
+    </StyledDiv>
+  )
 }
 
 export default Thanks;
@@ -61,6 +61,7 @@ const StyledDiv = styled.div`
     margin-right: 15%; 
     padding: 20px;
     text-align: center;
+    background-color: #FFF8DC;
     box-shadow: 0 -1px 0 #e0e0e0, 0 7px 10px rgba(0, 0, 0, 0.12),
     0 2px 4px rgba(0, 0, 0, 0.24);
 `;

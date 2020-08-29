@@ -132,7 +132,7 @@ const Container = styled.div`
     font-size: 25px;
     text-align: center;
     margin-bottom: 3px;
-    text-shadow: 1px 1px 1px #a9a9a9, 3px 3px 2px darkgray;
+    text-shadow: 1px 1px 1px #a9a9a9, 3px 3px 0.5px darkgray;
   }
 
   @media only screen and (max-width: 1105px){

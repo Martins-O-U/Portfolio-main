@@ -49,7 +49,7 @@ const Headers = styled.header`
     list-style: none;
     padding-left: 0;
     position: relative;
-    color: #fff;
+    color: #FFF8DC;
     text-decoration: none;
     outline: 0;
     font-weight: 600;
