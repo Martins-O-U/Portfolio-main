@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import img from "../Components/images/bg.png";
+import fullstack from "../Components/images/FullStack-1.png"
 import { } from "@fortawesome/react-fontawesome";
 import { } from "@fortawesome/free-solid-svg-icons";
 import Footer from "./FooterNav";
@@ -30,39 +31,55 @@ const Skills = () => {
           </div>
         </div>
         <div className="toolsDiv animated animatedFadeInUp fadeInUp">
-          <div className="toolsDivA skill">
-            <div className="badge">
-              <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="aaeb2f5c-a65b-4c09-b29d-d471acbf6b6b" data-share-badge-host="https://www.youracclaim.com"></div>
+          <div className="toolsDivA">
+            <div className="skill">
+              <div className="badge">
+                <a rel="noopener noreferrer" target="_blank" href="https://www.youracclaim.com/badges/aaeb2f5c-a65b-4c09-b29d-d471acbf6b6b/public_url" ><img src={fullstack} alt="My FullStack Pix" /> </a>
+                {/* <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="aaeb2f5c-a65b-4c09-b29d-d471acbf6b6b" data-share-badge-host="https://www.youracclaim.com"></div> */}
+              </div>
+              <div className="Techskill">
+                <div>
+                  <h3>Frontend Development</h3>
+                  <ParagraghsDiv>
+                    <p>React</p>
+                    <p>Redux</p>
+                    <p>Google Api</p>
+                    <p>JavaScript</p>
+                    <p>Zeit</p>
+                    <p>Netlify</p>
+                    <p>React Testing Library</p>
+                    <p>Styled-Components</p>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                  </ParagraghsDiv>
+                </div>
+                <div className="backend-one">
+                  <h3>Backend Development</h3>
+                  <ParagraghsDiv>
+                    <p>Node JS</p>
+                    <p>Python</p>
+                    <p>REST API</p>
+                    <p>Express</p>
+                    <p>PostgreSQL</p>
+                    <p>SQLite</p>
+                    <p>Heroku</p>
+                    <p>MongoDB</p>
+                  </ParagraghsDiv>
+                </div>
+              </div>
             </div>
-            <div className="Techskill">
-              <div>
-                <h3>Frontend Development</h3>
-                <ParagraghsDiv>
-                  <p>React</p>
-                  <p>Redux</p>
-                  <p>Google Api</p>
-                  <p>JavaScript</p>
-                  <p>Zeit</p>
-                  <p>Netlify</p>
-                  <p>React Testing Library</p>
-                  <p>Styled-Components</p>
-                  <p>HTML</p>
-                  <p>CSS</p>
-                </ParagraghsDiv>
-              </div>
-              <div>
-                <h3>Backend Development</h3>
-                <ParagraghsDiv>
-                  <p>Node JS</p>
-                  <p>Python</p>
-                  <p>REST API</p>
-                  <p>Express</p>
-                  <p>PostgreSQL</p>
-                  <p>SQLite</p>
-                  <p>Heroku</p>
-                  <p>MongoDB</p>
-                </ParagraghsDiv>
-              </div>
+            <div className="backend-two">
+              <h3>Backend Development</h3>
+              <ParagraghsDiv>
+                <p>Node JS</p>
+                <p>Python</p>
+                <p>REST API</p>
+                <p>Express</p>
+                <p>PostgreSQL</p>
+                <p>SQLite</p>
+                <p>Heroku</p>
+                <p>MongoDB</p>
+              </ParagraghsDiv>
             </div>
           </div>
           <div className="toolsDivA">
@@ -160,6 +177,16 @@ const Container = styled.div`
     padding-right: 2px;
     border-radius: 20px; 
     padding-bottom: 7px; 
+
+    .backend-two{
+      display: none;
+    }
+
+    @media only screen and (max-width: 850px){
+       .backend-two{
+         display: block;
+       }
+    }
   }
 
   .skill{
@@ -168,10 +195,23 @@ const Container = styled.div`
 
   .Techskill{
     margin-left: 10px;
+
+    .backend-one{
+      display: block;
+    }
+
+    @media only screen and (max-width: 850px){
+      .backend-one{
+         display: none;
+       }
+    }
   }
 
   .badge{
     margin-top: 20px;
+    img{
+      margin-top: 10px;
+    }
   }
 `;
 
