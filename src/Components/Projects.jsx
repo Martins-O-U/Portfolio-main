@@ -6,7 +6,7 @@ import lambdaDoor from "./images/LambdaDoor.png";
 import localPark from "./images/Local-Park.png";
 import refugeeStories from "./images/Refugee-stories.png";
 import reunite from "./images/Reunite.png";
-import stemjet from "./images/Stemjet.png";
+import stemjet from "./images/Stemjet.jpeg";
 import Footer from "./FooterNav";
 
 function Projects() {
@@ -173,6 +173,9 @@ const StyledDiv = styled.div`
     text-align: center;
     margin-bottom: 3px;
     text-shadow: 1px 1px 1px #a9a9a9, 3px 3px 0.5px darkgray;
+  }
+  .grid-view{
+    margin-top: 2px;
   }
 
   span {
