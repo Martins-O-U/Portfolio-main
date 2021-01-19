@@ -250,7 +250,7 @@ const HomeDisplay = styled.div`
     width: 45%;
     margin-top: 3%;
     img {
-      border-radius: 50%;
+      border-radius: 20%;
       border: 5px solid #F4A460;
       width: 260px;
     }
