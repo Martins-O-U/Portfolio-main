@@ -27,9 +27,9 @@ export const PojectInfo = [
     about:
       "The one-stop portal for Lambda graduates looking for company information, reviews and interview processes in the quest for a job",
     workedOn: "Worked on both Frontend and the Backend of the project with a team of seven developers",
-    responsibility: "Built the landing page footer using Styled-component and Font-Awesome",
-    responsibility2: "Created the App's documentation with walk-through video clips using giphy, then integrated exception monitoring with Sentery",
-    gitHubRepo: `https://github.com/LABS-EU3/lambdaDoor_backend`,
+    responsibility: "Built the landing page footer, worked on the sign-in authentication with Slack, and the Nearest Company search using Google Places",
+    responsibility2: "Created the App's documentation with walk-through video clips using giphy, then integrated exception monitoring with Sentery along with some Database implementations",
+    gitHubRepo: `https://github.com/LABS-EU3/lambdaDoor_frontend`,
     deployedAt: `https://www.lambdadoor.com/`
   },
   {
@@ -39,7 +39,7 @@ export const PojectInfo = [
       "Reunite is on a mission to help reconnect persons experiencing homelessness with their loved ones",
     workedOn: "Worked with a team of 5 developers working remotely where I was focussed with the Frontend task",
     responsibility: "Built the Landing, Sign-Up, Sign-In pages and the Navbar using Materialize CSS for styling",
-    responsibility2: "Made use of Font-Awesome Icons for the Footer social links display",
+    responsibility2: "Made use of Font-Awesome Icons for the Footer social links display, also worked on individual case with the family link pages",
     gitHubRepo: `https://github.com/Martins-O-U/Reunite`,
     deployedAt: `https://reunite-chi.now.sh`
   },
