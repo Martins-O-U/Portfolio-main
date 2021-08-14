@@ -14,7 +14,7 @@ const AboutMe = () => {
           <div className="styled-para">
             <p>
               I had my first real exposure to how Information Technology works
-              about just over two years ago, and it was a life-defining moment for me.
+              just over two years ago, and it was a life-defining moment for me.
               At first, I explored Computer Networking and some aspects of Network Security,
               within which period I also got introduced to Web Development.
               Here, I knew I had found my path and began some self-study sessions.
