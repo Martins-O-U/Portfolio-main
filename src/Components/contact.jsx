@@ -15,6 +15,7 @@ function Contact(props) {
   const [message, setMessage] = useState(contact_information)
   const [button, setButton] = useState(false)
   const [submitAction, setsubmitAction] = useState(false)
+  const [serverAction, setServerAction] = useState(false)
 
   const handleChange = (e) => {
     e.persist();
@@ -35,6 +36,8 @@ function Contact(props) {
       })
       .catch(error => {
         console.log(error.message)
+        setsubmitAction(submitAction)
+        setServerAction(!serverAction)
       })
   };
 
@@ -46,7 +49,10 @@ function Contact(props) {
         <Socials />
         <form onSubmit={handleSubmit}>
           <div className={`${submitAction ? 'show' : 'hide'}`}>
-            <p><span>Submitting....</span></p>
+            <p><span id="sub-span">Submitting....</span></p>
+          </div>
+          <div className={`${serverAction ? 'server-show' : 'server-hide'}`}>
+            <p><span id="server-span">Our server is temporarily down please send a direct mail to <strong>martinsonyedikachi@gmail.com</strong></span></p>
           </div>
           <div className="required">* are required</div>
           <div><label>*</label>
@@ -84,6 +90,12 @@ label{
 .hide{
   display: none;
 }
+.server-show{
+  display: block;
+}
+.server-hide{
+  display: none;
+}
 .show{
   display: block;
 }
@@ -91,7 +103,16 @@ label{
     margin-bottom: 30px;
     margin-top: 2px;
 }
-span{
+#server-span{
+  font-size: 14px;
+  background: #FF6347;
+  font-size: 14px;
+  padding:5px auto;
+  margin-top: 7px;
+  margin-bottom: 1px;
+  color: white;
+}
+#sub-span{
   background: #7CFC00;
   font-size: 18px;
   padding:3px 70px;
