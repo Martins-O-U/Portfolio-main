@@ -52,7 +52,7 @@ function Contact(props) {
             <p><span id="sub-span">Submitting....</span></p>
           </div>
           <div className={`${serverAction ? 'server-show' : 'server-hide'}`}>
-            <p><span id="server-span">Our server is temporarily down please send a direct mail to <strong>martinsonyedikachi@gmail.com</strong></span></p>
+            <p><span id="server-span">Our server is temporarily down, please send a direct mail to <strong>martinsonyedikachi@gmail.com</strong></span></p>
           </div>
           <div className="required">* are required</div>
           <div><label>*</label>
@@ -105,12 +105,11 @@ label{
 }
 #server-span{
   font-size: 14px;
-  background: #FF6347;
+  background: lightgrey;
   font-size: 14px;
-  padding:5px auto;
-  margin-top: 7px;
-  margin-bottom: 1px;
-  color: white;
+  padding:5px;
+  margin: 7px auto 1px;
+  color: red;
 }
 #sub-span{
   background: #7CFC00;
