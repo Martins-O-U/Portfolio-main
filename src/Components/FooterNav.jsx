@@ -18,7 +18,7 @@ export default function Footer() {
           <Link to="/contact" id="home" className="contact"><p>Contact</p></Link>
         </div>
         <div className="copy-right">
-          <p>&copy; 2020 Martins O-U</p>
+          <p>&copy; 2022 Martins O-U</p>
         </div>
         <div className="social-handle">
           <SocialsFoot />
